@@ -4,7 +4,7 @@ import '../style/Header.scss'
 
 function Header() {
   return (
-    <header>
+    <header className='home-header'>
       <Navbar />
       <div className='cc-hero-text cc-container'>
         <section>

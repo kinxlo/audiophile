@@ -1,14 +1,18 @@
+import React from 'react'
 
-import Header from './components/Header'
-import Main from './components/Main'
+import { Switch, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Headphones from './pages/Headphones'
 import Footer from './components/Footer'
 import './App.scss'
 
 function App() {
   return (
     <div className='App'>
-      <Header />
-      <Main />
+      <Switch>
+        <Route path='/' component={Home} exact />
+        <Route path='/headphones' component={Headphones} exact />
+      </Switch>
       <Footer />
     </div>
   )

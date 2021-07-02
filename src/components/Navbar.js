@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaShoppingCart } from 'react-icons/fa'
 import '../style/Navbar.scss'
 
 function Navbar() {
@@ -19,7 +18,7 @@ function Navbar() {
             <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link to='/'>Headphones</Link>
+            <Link to='/headphones'>Headphones</Link>
           </li>
           <li>
             <Link to='/'>Speakers</Link>

@@ -1,0 +1,15 @@
+@import '../style/variables';
+
+.headphone-header{
+    background-color: $main-black;
+    height: 21rem;
+
+    h1{
+        text-transform: uppercase;
+        color: $main-white;
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: 1.4px;text-align: center;
+        margin-top: 6rem;
+    }
+}
