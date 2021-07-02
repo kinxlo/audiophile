@@ -1,0 +1,26 @@
+@import '../style/variables';
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+
+    h1 {
+        font-size: 25px;
+    }
+
+    li {
+        display: inline;
+        margin: 0 1rem;
+        text-transform: uppercase;
+
+        a{
+            color: $main-white;
+        }
+    }
+}
+
+hr{
+    background: grey;
+}

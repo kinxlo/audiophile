@@ -1,0 +1,32 @@
+@import '../style/variables';
+
+footer {
+    background-color: $main-black;
+    margin-top: 200px;
+    height: 23rem;
+
+    section{
+        padding-top: 3rem !important;
+    }
+
+    .footer-text {
+        color: grey;
+
+        p{
+            width: 34rem;
+            font-weight: 200;
+            font-size: 15px;
+            line-height: 25px;
+        }
+
+        .footer-socials{
+            text-align: right;
+            margin-bottom: 1rem;
+
+            a{
+                margin-left: 1rem;
+                color: $main-white;
+            }
+        }
+    }
+}

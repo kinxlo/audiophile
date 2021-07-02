@@ -1,0 +1,46 @@
+@import '../style/variables';
+
+.footer-banner-section {
+    // border: 1px solid red;
+    height: 38rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    article {
+        width: 50%;
+
+        div {
+            width: 29rem;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 40px;
+            letter-spacing: 1.42857px;
+            text-transform: uppercase;
+
+            span {
+                color: $accent-color;
+            }
+        }
+
+        p {
+            font-weight: 200;
+            font-size: 15px;
+            line-height: 25px;
+            padding-right: 3rem;
+        }
+    }
+
+    .person-on-headphones {
+        width: 50%;
+        height: 100%;
+        background-image: url('https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-best-gear_a5jy1y.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+    }
+}

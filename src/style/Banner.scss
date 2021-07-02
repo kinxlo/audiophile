@@ -1,0 +1,136 @@
+@import '../style/variables';
+
+.banner {
+    margin: 11rem auto 13rem !important;
+
+    .banner-a {
+        display: flex;
+        justify-content: space-around;
+        height: 35rem;
+        overflow: hidden;
+        // border: 1px solid red;
+        border-radius: 8px;
+        background-color: $accent-color;
+        background-image: url('https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958929/audiophile/assets/home/desktop/pattern-circles_hwfmfl.svg');
+        background-repeat: no-repeat;
+        background-position: -100% 10%;
+
+        img {
+            width: 25rem;
+            height: 31rem;
+            margin-top: 5rem;
+        }
+
+        article {
+            width: 22rem;
+            height: fit-content;
+            margin-top: 6rem;
+
+            h1 {
+                font-size: 56px;
+                text-transform: uppercase;
+                color: $main-white;
+                font-weight: 700;
+            }
+
+            p {
+                font-weight: 200;
+                font-size: 15px;
+                color: $main-white;
+                padding-right: 1rem;
+            }
+
+            // must turn to mixins
+            button {
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 700;
+                // width: 30%;
+                padding: .5rem;
+                border: none;
+                background: $main-black;
+                color: $main-white;
+            }
+        }
+    }
+
+    .banner-b {
+        height: 20rem;
+        background-image: url('https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958928/audiophile/assets/home/desktop/image-speaker-zx7_gmaquh.jpg');
+        margin: 3rem 0;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+
+        article {
+            width: 204px;
+            margin-left: 5rem;
+
+            h1 {
+                font-size: 28px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            // must turn to mixins
+            button {
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 700;
+                // width: 30%;
+                padding: .5rem;
+                border: none;
+                background: transparent;
+                border: 1px solid $main-black;
+                color: $main-black;
+            }
+        }
+    }
+
+    .banner-c {
+        height: 20rem;
+        display: flex;
+        justify-content: space-between;
+
+        .banner-c-img {
+            width: 33.75rem;
+            height: 100%;
+            background-image: url('https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958928/audiophile/assets/home/desktop/image-earphones-yx1_zb4vgf.jpg');
+            border-radius: 8px;
+        }
+
+        .banner-c-text {
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            padding-left: 5rem;
+            justify-content: center;
+            width: 33.75rem;
+            height: 100%;
+            background-color: $main-white-l;
+
+            h1 {
+                font-size: 28px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            // must turn to mixins
+            button {
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 700;
+                // width: 30%;
+                padding: .5rem;
+                border: none;
+                background: transparent;
+                border: 1px solid $main-black;
+                color: $main-black;
+            }
+        }
+
+
+    }
+}

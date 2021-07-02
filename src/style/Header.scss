@@ -1,0 +1,55 @@
+@import '../style/variables';
+
+header {
+    background-image: url('https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958928/audiophile/assets/home/desktop/image-hero_p8d4rz.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 46rem;
+    // padding: 0 10rem;
+    color: $main-white;
+}
+
+.cc-hero-text {
+    
+    section {
+        // border: 1px solid red;
+        height: 21rem;
+        width: 50%;
+        margin: 10% 0;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+
+    }
+
+    h3 {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-weight: normal;
+    }
+
+    h1 {
+        font-size: 56px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 15px;
+        font-weight: 200;
+        width: 60%;
+    }
+
+    // must turn to mixins
+    button {
+        text-transform: uppercase;
+        font-size: 13px;
+        width: 20%;
+        padding: .5rem;
+        border: none;
+        background: $accent-color;
+        color: $main-white;
+    }
+}
