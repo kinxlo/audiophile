@@ -2,17 +2,18 @@ import React, { useState, createContext, useEffect } from 'react'
 
 export const StoreContext = createContext()
 
-const StoreContextProvider = ({children}) => {
+const StoreContextProvider = ({ children }) => {
   // the array of data to hold the json data provided
-  const [data, setData] = useState([])
 
-  //get jason data using the fetch api
-  const fetchPackages = async () => {
+  const [products, setProducts] = useState([])
+
+  //get json data locally using the fetch api
+  const getProducts = async () => {
     try {
       const response = await fetch(`/data.json`)
-      const products = await response.json()
-      console.log(products)
-      setData(products)
+      const items = await response.json()
+      setProducts(items)
+    
     } catch (error) {
       console.log(error)
     }
@@ -20,11 +21,13 @@ const StoreContextProvider = ({children}) => {
 
   // access data once, when the component (App) renders
   useEffect(() => {
-    fetchPackages()
+    getProducts()
   }, [])
 
   return (
-    <StoreContext.Provider value={data}>{children}</StoreContext.Provider>
+    <StoreContext.Provider value={{ products }}>
+      {children}
+    </StoreContext.Provider>
   )
 }
 

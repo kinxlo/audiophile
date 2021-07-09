@@ -1,3 +1,4 @@
+
 [
   {
     "id": 1,
@@ -6,7 +7,7 @@
     "image": {
       "mobile": "./assets/product-yx1-earphones/mobile/image-product.jpg",
       "tablet": "./assets/product-yx1-earphones/tablet/image-product.jpg",
-      "desktop": "./assets/product-yx1-earphones/desktop/image-product.jpg"
+      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/category-earphones/desktop/image-yx1-earphones_opop5w.jpg"
     },
     "category": "earphones",
     "new": true,
@@ -89,7 +90,7 @@
     "image": {
       "mobile": "./assets/product-xx59-headphones/mobile/image-product.jpg",
       "tablet": "./assets/product-xx59-headphones/tablet/image-product.jpg",
-      "desktop": "./assets/product-xx59-headphones/desktop/image-product.jpg"
+      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958924/audiophile/assets/category-headphones/desktop/image-xx59_tq2dbc.jpg"
     },
     "category": "headphones",
     "new": false,
@@ -168,7 +169,7 @@
     "image": {
       "mobile": "./assets/product-xx99-mark-one-headphones/mobile/image-product.jpg",
       "tablet": "./assets/product-xx99-mark-one-headphones/tablet/image-product.jpg",
-      "desktop": "./assets/product-xx99-mark-one-headphones/desktop/image-product.jpg"
+      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/category-headphones/desktop/image-xx99-mark-one_naffhs.jpg"
     },
     "category": "headphones",
     "new": false,
@@ -247,7 +248,7 @@
     "image": {
       "mobile": "./assets/product-xx99-mark-two-headphones/mobile/image-product.jpg",
       "tablet": "./assets/product-xx99-mark-two-headphones/tablet/image-product.jpg",
-      "desktop": "./assets/product-xx99-mark-two-headphones/desktop/image-product.jpg"
+      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958924/audiophile/assets/category-headphones/desktop/image-xx99-mark-two_lkqy5n.jpg"
     },
     "category": "headphones",
     "new": true,
@@ -330,7 +331,7 @@
     "image": {
       "mobile": "./assets/product-zx7-speaker/mobile/image-product.jpg",
       "tablet": "./assets/product-zx7-speaker/tablet/image-product.jpg",
-      "desktop": "./assets/product-zx7-speaker/desktop/image-product.jpg"
+      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958926/audiophile/assets/category-speakers/desktop/image-zx7_xankin.jpg"
     },
     "category": "speakers",
     "new": false,
@@ -413,7 +414,7 @@
     "image": {
       "mobile": "./assets/product-zx9-speaker/mobile/image-product.jpg",
       "tablet": "./assets/product-zx9-speaker/tablet/image-product.jpg",
-      "desktop": "./assets/product-zx9-speaker/desktop/image-product.jpg"
+      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958927/audiophile/assets/category-speakers/desktop/image-zx9_szeqja.jpg"
     },
     "category": "speakers",
     "new": true,

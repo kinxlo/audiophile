@@ -19,7 +19,7 @@ const FooterBanner = () => {
           </p>
         </div>
       </article>
-      <div className='person-on-headphones'></div>
+      <div className='person-on-headphones'>   </div>
     </section>
   )
 }

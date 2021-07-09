@@ -21,10 +21,10 @@ function Navbar() {
             <Link to='/headphones'>Headphones</Link>
           </li>
           <li>
-            <Link to='/'>Speakers</Link>
+            <Link to='/speakers'>Speakers</Link>
           </li>
           <li>
-            <Link to='/'>Earphones</Link>
+            <Link to='/earphones'>Earphones</Link>
           </li>
         </div>
 
