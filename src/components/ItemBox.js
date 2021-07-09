@@ -3,11 +3,11 @@ import '../style/ItemBox.scss'
 import { Link } from 'react-router-dom'
 
 const ItemBox = (props) => {
-  const { name, description, image } = props.item
+  const { name, description, image, slug } = props.item
 
-  const handleClick = () => {
-    console.log(name)
-  }
+  // const handleClick = () => {
+  //   console.log(props.item)
+  // }
 
   return (
     <>
@@ -20,8 +20,8 @@ const ItemBox = (props) => {
             <h3>New product</h3>
             <h1>{name}</h1>
             <p className='cc-hero-desc'>{description}</p>
-            <Link to='/Details'>
-              <button onClick={handleClick}>See product</button>
+            <Link to={`/details/${slug}`}>
+              <button>See product</button>
             </Link>
           </div>
         </article>

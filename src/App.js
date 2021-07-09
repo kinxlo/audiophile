@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Switch, Route } from 'react-router-dom'
-import StoreContextProvider from './contexts/StoreContext'
+
 import Home from './pages/Home'
 import Headphones from './pages/Headphones'
 import Speakers from './pages/Speakers'
@@ -13,18 +13,16 @@ import Details from './pages/Details'
 
 function App() {
   return (
-    <StoreContextProvider>
-      <div className='App'>
-        <Switch>
-          <Route path='/' component={Home} exact />
-          <Route path='/headphones' component={Headphones} exact />
-          <Route path='/speakers' component={Speakers} />
-          <Route path='/earphones' component={Earphones} />
-        </Switch>
-        {/* <Details/> */}
-        <Footer />
-      </div>
-    </StoreContextProvider>
+    <div className='App'>
+      <Switch>
+        <Route path='/' component={Home} exact />
+        <Route path='/headphones' component={Headphones} exact />
+        <Route path='/speakers' component={Speakers} />
+        <Route path='/earphones' component={Earphones} />
+        <Route path='/details/:slug' component={Details} />
+      </Switch>
+      <Footer />
+    </div>
   )
 }
 

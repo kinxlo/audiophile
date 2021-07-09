@@ -1,13 +1,12 @@
-
 [
   {
     "id": 1,
     "slug": "yx1-earphones",
     "name": "YX1 Wireless Earphones",
     "image": {
-      "mobile": "./assets/product-yx1-earphones/mobile/image-product.jpg",
-      "tablet": "./assets/product-yx1-earphones/tablet/image-product.jpg",
-      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/category-earphones/desktop/image-yx1-earphones_opop5w.jpg"
+      "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958938/audiophile/assets/product-yx1-earphones/mobile/image-product_xpwhyf.jpg",
+      "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958938/audiophile/assets/product-yx1-earphones/tablet/image-product_gtmse5.jpg",
+      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958937/audiophile/assets/product-yx1-earphones/desktop/image-product_iayymh.jpg"
     },
     "category": "earphones",
     "new": true,
@@ -38,19 +37,19 @@
     ],
     "gallery": {
       "first": {
-        "mobile": "./assets/product-yx1-earphones/mobile/image-gallery-1.jpg",
-        "tablet": "./assets/product-yx1-earphones/tablet/image-gallery-1.jpg",
-        "desktop": "./assets/product-yx1-earphones/desktop/image-gallery-1.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958937/audiophile/assets/product-yx1-earphones/mobile/image-gallery-1_b0wa28.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958938/audiophile/assets/product-yx1-earphones/tablet/image-gallery-1_l8b9zv.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958937/audiophile/assets/product-yx1-earphones/desktop/image-gallery-1_zzkuto.jpg"
       },
       "second": {
-        "mobile": "./assets/product-yx1-earphones/mobile/image-gallery-2.jpg",
-        "tablet": "./assets/product-yx1-earphones/tablet/image-gallery-2.jpg",
-        "desktop": "./assets/product-yx1-earphones/desktop/image-gallery-2.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958937/audiophile/assets/product-yx1-earphones/mobile/image-gallery-2_m4lwp1.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958938/audiophile/assets/product-yx1-earphones/tablet/image-gallery-2_omvy4z.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958937/audiophile/assets/product-yx1-earphones/desktop/image-gallery-2_vwrv35.jpg"
       },
       "third": {
-        "mobile": "./assets/product-yx1-earphones/mobile/image-gallery-3.jpg",
-        "tablet": "./assets/product-yx1-earphones/tablet/image-gallery-3.jpg",
-        "desktop": "./assets/product-yx1-earphones/desktop/image-gallery-3.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958937/audiophile/assets/product-yx1-earphones/mobile/image-gallery-3_cbreuy.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958938/audiophile/assets/product-yx1-earphones/tablet/image-gallery-3_cp4rks.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958937/audiophile/assets/product-yx1-earphones/desktop/image-gallery-3_b5e01k.jpg"
       }
     },
     "others": [
@@ -58,27 +57,27 @@
         "slug": "xx99-mark-one-headphones",
         "name": "XX99 Mark I",
         "image": {
-          "mobile": "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
-          "tablet": "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-          "desktop": "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/mobile/image-xx99-mark-one-headphones_kidtwy.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-xx99-mark-one-headphones_enil8a.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-xx99-mark-one-headphones_jtnhue.jpg"
         }
       },
       {
         "slug": "xx59-headphones",
         "name": "XX59",
         "image": {
-          "mobile": "./assets/shared/mobile/image-xx59-headphones.jpg",
-          "tablet": "./assets/shared/tablet/image-xx59-headphones.jpg",
-          "desktop": "./assets/shared/desktop/image-xx59-headphones.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/mobile/image-xx59-headphones_mmx11k.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-xx59-headphones_s6wlub.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-xx59-headphones_upcy2f.jpg"
         }
       },
       {
         "slug": "zx9-speaker",
         "name": "ZX9 Speaker",
         "image": {
-          "mobile": "./assets/shared/mobile/image-zx9-speaker.jpg",
-          "tablet": "./assets/shared/tablet/image-zx9-speaker.jpg",
-          "desktop": "./assets/shared/desktop/image-zx9-speaker.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958946/audiophile/assets/shared/mobile/image-zx9-speaker_xttgn2.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-zx9-speaker_abynra.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/desktop/image-zx9-speaker_vypqdj.jpg"
         }
       }
     ]
@@ -88,9 +87,9 @@
     "slug": "xx59-headphones",
     "name": "XX59 Headphones",
     "image": {
-      "mobile": "./assets/product-xx59-headphones/mobile/image-product.jpg",
-      "tablet": "./assets/product-xx59-headphones/tablet/image-product.jpg",
-      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958924/audiophile/assets/category-headphones/desktop/image-xx59_tq2dbc.jpg"
+      "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958931/audiophile/assets/product-xx59-headphones/mobile/image-product_f4qnqf.jpg",
+      "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958932/audiophile/assets/product-xx59-headphones/tablet/image-product_pt1b2z.jpg",
+      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958930/audiophile/assets/product-xx59-headphones/desktop/image-product_rwrvrf.jpg"
     },
     "category": "headphones",
     "new": false,
@@ -117,19 +116,19 @@
     ],
     "gallery": {
       "first": {
-        "mobile": "./assets/product-xx59-headphones/mobile/image-gallery-1.jpg",
-        "tablet": "./assets/product-xx59-headphones/tablet/image-gallery-1.jpg",
-        "desktop": "./assets/product-xx59-headphones/desktop/image-gallery-1.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958931/audiophile/assets/product-xx59-headphones/mobile/image-gallery-1_bhkewi.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958931/audiophile/assets/product-xx59-headphones/tablet/image-gallery-1_kn1ijn.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958930/audiophile/assets/product-xx59-headphones/desktop/image-gallery-1_j4iyzb.jpg"
       },
       "second": {
-        "mobile": "./assets/product-xx59-headphones/mobile/image-gallery-2.jpg",
-        "tablet": "./assets/product-xx59-headphones/tablet/image-gallery-2.jpg",
-        "desktop": "./assets/product-xx59-headphones/desktop/image-gallery-2.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958931/audiophile/assets/product-xx59-headphones/mobile/image-gallery-2_msvf22.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958932/audiophile/assets/product-xx59-headphones/tablet/image-gallery-2_zrk1ef.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958930/audiophile/assets/product-xx59-headphones/desktop/image-gallery-2_fxdu2q.jpg"
       },
       "third": {
-        "mobile": "./assets/product-xx59-headphones/mobile/image-gallery-3.jpg",
-        "tablet": "./assets/product-xx59-headphones/tablet/image-gallery-3.jpg",
-        "desktop": "./assets/product-xx59-headphones/desktop/image-gallery-3.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958931/audiophile/assets/product-xx59-headphones/mobile/image-gallery-3_moengs.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958932/audiophile/assets/product-xx59-headphones/tablet/image-gallery-3_dyx9un.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958931/audiophile/assets/product-xx59-headphones/desktop/image-gallery-3_rgbecr.jpg"
       }
     },
     "others": [
@@ -137,27 +136,27 @@
         "slug": "xx99-mark-two-headphones",
         "name": "XX99 Mark II",
         "image": {
-          "mobile": "./assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
-          "tablet": "./assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
-          "desktop": "./assets/shared/desktop/image-xx99-mark-two-headphones.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/mobile/image-xx99-mark-two-headphones_gysjsi.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-xx99-mark-two-headphones_tvpd7n.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-xx99-mark-two-headphones_cxn7zg.jpg"
         }
       },
       {
         "slug": "xx99-mark-one-headphones",
         "name": "XX99 Mark I",
         "image": {
-          "mobile": "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
-          "tablet": "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-          "desktop": "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/mobile/image-xx99-mark-one-headphones_kidtwy.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-xx99-mark-one-headphones_enil8a.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-xx99-mark-one-headphones_jtnhue.jpg"
         }
       },
       {
         "slug": "zx9-speaker",
         "name": "ZX9 Speaker",
         "image": {
-          "mobile": "./assets/shared/mobile/image-zx9-speaker.jpg",
-          "tablet": "./assets/shared/tablet/image-zx9-speaker.jpg",
-          "desktop": "./assets/shared/desktop/image-zx9-speaker.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958946/audiophile/assets/shared/mobile/image-zx9-speaker_xttgn2.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-zx9-speaker_abynra.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/desktop/image-zx9-speaker_vypqdj.jpg"
         }
       }
     ]
@@ -167,9 +166,9 @@
     "slug": "xx99-mark-one-headphones",
     "name": "XX99 Mark I Headphones",
     "image": {
-      "mobile": "./assets/product-xx99-mark-one-headphones/mobile/image-product.jpg",
-      "tablet": "./assets/product-xx99-mark-one-headphones/tablet/image-product.jpg",
-      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/category-headphones/desktop/image-xx99-mark-one_naffhs.jpg"
+      "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958934/audiophile/assets/product-xx99-mark-one-headphones/mobile/image-product_xd6k55.jpg",
+      "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958934/audiophile/assets/product-xx99-mark-one-headphones/tablet/image-product_kbskvs.jpg",
+      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958933/audiophile/assets/product-xx99-mark-one-headphones/desktop/image-product_mhmdeh.jpg"
     },
     "category": "headphones",
     "new": false,
@@ -196,19 +195,19 @@
     ],
     "gallery": {
       "first": {
-        "mobile": "./assets/product-xx99-mark-one-headphones/mobile/image-gallery-1.jpg",
-        "tablet": "./assets/product-xx99-mark-one-headphones/tablet/image-gallery-1.jpg",
-        "desktop": "./assets/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958933/audiophile/assets/product-xx99-mark-one-headphones/mobile/image-gallery-1_bgskgg.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958934/audiophile/assets/product-xx99-mark-one-headphones/tablet/image-gallery-1_brjcoj.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958932/audiophile/assets/product-xx99-mark-one-headphones/desktop/image-gallery-1_dcabd3.jpg"
       },
       "second": {
-        "mobile": "./assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg",
-        "tablet": "./assets/product-xx99-mark-one-headphones/tablet/image-gallery-2.jpg",
-        "desktop": "./assets/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958933/audiophile/assets/product-xx99-mark-one-headphones/mobile/image-gallery-2_gw5ajy.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958934/audiophile/assets/product-xx99-mark-one-headphones/tablet/image-gallery-2_krkqby.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958932/audiophile/assets/product-xx99-mark-one-headphones/desktop/image-gallery-2_wiaw62.jpg"
       },
       "third": {
-        "mobile": "./assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg",
-        "tablet": "./assets/product-xx99-mark-one-headphones/tablet/image-gallery-3.jpg",
-        "desktop": "./assets/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958933/audiophile/assets/product-xx99-mark-one-headphones/mobile/image-gallery-3_obv7k2.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958934/audiophile/assets/product-xx99-mark-one-headphones/tablet/image-gallery-3_chkn9m.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958933/audiophile/assets/product-xx99-mark-one-headphones/desktop/image-gallery-3_fgehdp.jpg"
       }
     },
     "others": [
@@ -216,27 +215,27 @@
         "slug": "xx99-mark-two-headphones",
         "name": "XX99 Mark II",
         "image": {
-          "mobile": "./assets/shared/mobile/image-xx99-mark-two-headphones.jpg",
-          "tablet": "./assets/shared/tablet/image-xx99-mark-two-headphones.jpg",
-          "desktop": "./assets/shared/desktop/image-xx99-mark-two-headphones.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/mobile/image-xx99-mark-two-headphones_gysjsi.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-xx99-mark-two-headphones_tvpd7n.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-xx99-mark-two-headphones_cxn7zg.jpg"
         }
       },
       {
         "slug": "xx59-headphones",
         "name": "XX59",
         "image": {
-          "mobile": "./assets/shared/mobile/image-xx59-headphones.jpg",
-          "tablet": "./assets/shared/tablet/image-xx59-headphones.jpg",
-          "desktop": "./assets/shared/desktop/image-xx59-headphones.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/mobile/image-xx59-headphones_mmx11k.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-xx59-headphones_s6wlub.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-xx59-headphones_upcy2f.jpg"
         }
       },
       {
         "slug": "zx9-speaker",
         "name": "ZX9 Speaker",
         "image": {
-          "mobile": "./assets/shared/mobile/image-zx9-speaker.jpg",
-          "tablet": "./assets/shared/tablet/image-zx9-speaker.jpg",
-          "desktop": "./assets/shared/desktop/image-zx9-speaker.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958946/audiophile/assets/shared/mobile/image-zx9-speaker_xttgn2.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-zx9-speaker_abynra.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/desktop/image-zx9-speaker_vypqdj.jpg"
         }
       }
     ]
@@ -246,9 +245,9 @@
     "slug": "xx99-mark-two-headphones",
     "name": "XX99 Mark II Headphones",
     "image": {
-      "mobile": "./assets/product-xx99-mark-two-headphones/mobile/image-product.jpg",
-      "tablet": "./assets/product-xx99-mark-two-headphones/tablet/image-product.jpg",
-      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958924/audiophile/assets/category-headphones/desktop/image-xx99-mark-two_lkqy5n.jpg"
+      "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958936/audiophile/assets/product-xx99-mark-two-headphones/mobile/image-product_ml2dg4.jpg",
+      "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958936/audiophile/assets/product-xx99-mark-two-headphones/tablet/image-product_jozbug.jpg",
+      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958935/audiophile/assets/product-xx99-mark-two-headphones/desktop/image-product_m0kbyz.jpg"
     },
     "category": "headphones",
     "new": true,
@@ -279,19 +278,19 @@
     ],
     "gallery": {
       "first": {
-        "mobile": "./assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg",
-        "tablet": "./assets/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg",
-        "desktop": "./assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958935/audiophile/assets/product-xx99-mark-two-headphones/mobile/image-gallery-1_xwlq7f.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958935/audiophile/assets/product-xx99-mark-two-headphones/tablet/image-gallery-1_lir6ff.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958934/audiophile/assets/product-xx99-mark-two-headphones/desktop/image-gallery-1_ctzbil.jpg"
       },
       "second": {
-        "mobile": "./assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg",
-        "tablet": "./assets/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg",
-        "desktop": "./assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958935/audiophile/assets/product-xx99-mark-two-headphones/mobile/image-gallery-2_vv4mph.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958936/audiophile/assets/product-xx99-mark-two-headphones/tablet/image-gallery-2_cwnonx.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958934/audiophile/assets/product-xx99-mark-two-headphones/desktop/image-gallery-2_xxc8rb.jpg"
       },
       "third": {
-        "mobile": "./assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg",
-        "tablet": "./assets/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg",
-        "desktop": "./assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958935/audiophile/assets/product-xx99-mark-two-headphones/mobile/image-gallery-3_vapmth.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958936/audiophile/assets/product-xx99-mark-two-headphones/tablet/image-gallery-3_hng8gn.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958935/audiophile/assets/product-xx99-mark-two-headphones/desktop/image-gallery-3_mq4nf4.jpg"
       }
     },
     "others": [
@@ -299,27 +298,27 @@
         "slug": "xx99-mark-one-headphones",
         "name": "XX99 Mark I",
         "image": {
-          "mobile": "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
-          "tablet": "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-          "desktop": "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/mobile/image-xx99-mark-one-headphones_kidtwy.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-xx99-mark-one-headphones_enil8a.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-xx99-mark-one-headphones_jtnhue.jpg"
         }
       },
       {
         "slug": "xx59-headphones",
         "name": "XX59",
         "image": {
-          "mobile": "./assets/shared/mobile/image-xx59-headphones.jpg",
-          "tablet": "./assets/shared/tablet/image-xx59-headphones.jpg",
-          "desktop": "./assets/shared/desktop/image-xx59-headphones.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/mobile/image-xx59-headphones_mmx11k.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-xx59-headphones_s6wlub.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-xx59-headphones_upcy2f.jpg"
         }
       },
       {
         "slug": "zx9-speaker",
         "name": "ZX9 Speaker",
         "image": {
-          "mobile": "./assets/shared/mobile/image-zx9-speaker.jpg",
-          "tablet": "./assets/shared/tablet/image-zx9-speaker.jpg",
-          "desktop": "./assets/shared/desktop/image-zx9-speaker.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958946/audiophile/assets/shared/mobile/image-zx9-speaker_xttgn2.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-zx9-speaker_abynra.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/desktop/image-zx9-speaker_vypqdj.jpg"
         }
       }
     ]
@@ -329,9 +328,9 @@
     "slug": "zx7-speaker",
     "name": "ZX7 Speaker",
     "image": {
-      "mobile": "./assets/product-zx7-speaker/mobile/image-product.jpg",
-      "tablet": "./assets/product-zx7-speaker/tablet/image-product.jpg",
-      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958926/audiophile/assets/category-speakers/desktop/image-zx7_xankin.jpg"
+      "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958939/audiophile/assets/product-zx7-speaker/mobile/image-product_rlluuf.jpg",
+      "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958940/audiophile/assets/product-zx7-speaker/tablet/image-product_j68xrb.jpg",
+      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958939/audiophile/assets/product-zx7-speaker/desktop/image-product_m1dspt.jpg"
     },
     "category": "speakers",
     "new": false,
@@ -362,19 +361,19 @@
     ],
     "gallery": {
       "first": {
-        "mobile": "./assets/product-zx7-speaker/mobile/image-gallery-1.jpg",
-        "tablet": "./assets/product-zx7-speaker/tablet/image-gallery-1.jpg",
-        "desktop": "./assets/product-zx7-speaker/desktop/image-gallery-1.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958939/audiophile/assets/product-zx7-speaker/mobile/image-gallery-1_wsimxr.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958939/audiophile/assets/product-zx7-speaker/tablet/image-gallery-1_prw0om.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958938/audiophile/assets/product-zx7-speaker/desktop/image-gallery-1_dd2tzl.jpg"
       },
       "second": {
-        "mobile": "./assets/product-zx7-speaker/mobile/image-gallery-2.jpg",
-        "tablet": "./assets/product-zx7-speaker/tablet/image-gallery-2.jpg",
-        "desktop": "./assets/product-zx7-speaker/desktop/image-gallery-2.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958939/audiophile/assets/product-zx7-speaker/mobile/image-gallery-2_sqrwag.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958940/audiophile/assets/product-zx7-speaker/tablet/image-gallery-2_xu1fqj.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958938/audiophile/assets/product-zx7-speaker/desktop/image-gallery-2_ak0vo5.jpg"
       },
       "third": {
-        "mobile": "./assets/product-zx7-speaker/mobile/image-gallery-3.jpg",
-        "tablet": "./assets/product-zx7-speaker/tablet/image-gallery-3.jpg",
-        "desktop": "./assets/product-zx7-speaker/desktop/image-gallery-3.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958939/audiophile/assets/product-zx7-speaker/mobile/image-gallery-3_agxmgt.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958940/audiophile/assets/product-zx7-speaker/tablet/image-gallery-3_xhpaul.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958939/audiophile/assets/product-zx7-speaker/desktop/image-gallery-3_t8zk4k.jpg"
       }
     },
     "others": [
@@ -382,27 +381,27 @@
         "slug": "zx9-speaker",
         "name": "ZX9 Speaker",
         "image": {
-          "mobile": "./assets/shared/mobile/image-zx9-speaker.jpg",
-          "tablet": "./assets/shared/tablet/image-zx9-speaker.jpg",
-          "desktop": "./assets/shared/desktop/image-zx9-speaker.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958946/audiophile/assets/shared/mobile/image-zx9-speaker_xttgn2.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-zx9-speaker_abynra.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/desktop/image-zx9-speaker_vypqdj.jpg"
         }
       },
       {
         "slug": "xx99-mark-one-headphones",
         "name": "XX99 Mark I",
         "image": {
-          "mobile": "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
-          "tablet": "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-          "desktop": "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/mobile/image-xx99-mark-one-headphones_kidtwy.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-xx99-mark-one-headphones_enil8a.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-xx99-mark-one-headphones_jtnhue.jpg"
         }
       },
       {
         "slug": "xx59-headphones",
         "name": "XX59",
         "image": {
-          "mobile": "./assets/shared/mobile/image-xx59-headphones.jpg",
-          "tablet": "./assets/shared/tablet/image-xx59-headphones.jpg",
-          "desktop": "./assets/shared/desktop/image-xx59-headphones.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/mobile/image-xx59-headphones_mmx11k.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-xx59-headphones_s6wlub.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-xx59-headphones_upcy2f.jpg"
         }
       }
     ]
@@ -412,9 +411,9 @@
     "slug": "zx9-speaker",
     "name": "ZX9 Speaker",
     "image": {
-      "mobile": "./assets/product-zx9-speaker/mobile/image-product.jpg",
-      "tablet": "./assets/product-zx9-speaker/tablet/image-product.jpg",
-      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958927/audiophile/assets/category-speakers/desktop/image-zx9_szeqja.jpg"
+      "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958941/audiophile/assets/product-zx9-speaker/mobile/image-product_uodae4.jpg",
+      "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958942/audiophile/assets/product-zx9-speaker/tablet/image-product_slcnqq.jpg",
+      "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958940/audiophile/assets/product-zx9-speaker/desktop/image-product_tj2sss.jpg"
     },
     "category": "speakers",
     "new": true,
@@ -445,19 +444,19 @@
     ],
     "gallery": {
       "first": {
-        "mobile": "./assets/product-zx9-speaker/mobile/image-gallery-1.jpg",
-        "tablet": "./assets/product-zx9-speaker/tablet/image-gallery-1.jpg",
-        "desktop": "./assets/product-zx9-speaker/desktop/image-gallery-1.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958941/audiophile/assets/product-zx9-speaker/mobile/image-gallery-1_xoywpq.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958941/audiophile/assets/product-zx9-speaker/tablet/image-gallery-1_nu9irh.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958940/audiophile/assets/product-zx9-speaker/desktop/image-gallery-1_k0hkuc.jpg"
       },
       "second": {
-        "mobile": "./assets/product-zx9-speaker/mobile/image-gallery-2.jpg",
-        "tablet": "./assets/product-zx9-speaker/tablet/image-gallery-2.jpg",
-        "desktop": "./assets/product-zx9-speaker/desktop/image-gallery-2.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958941/audiophile/assets/product-zx9-speaker/mobile/image-gallery-2_xedzap.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958941/audiophile/assets/product-zx9-speaker/tablet/image-gallery-2_usdjst.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958940/audiophile/assets/product-zx9-speaker/desktop/image-gallery-2_rtz9a0.jpg"
       },
       "third": {
-        "mobile": "./assets/product-zx9-speaker/mobile/image-gallery-3.jpg",
-        "tablet": "./assets/product-zx9-speaker/tablet/image-gallery-3.jpg",
-        "desktop": "./assets/product-zx9-speaker/desktop/image-gallery-3.jpg"
+        "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958941/audiophile/assets/product-zx9-speaker/mobile/image-gallery-3_wlrrne.jpg",
+        "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958941/audiophile/assets/product-zx9-speaker/tablet/image-gallery-3_byspku.jpg",
+        "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958940/audiophile/assets/product-zx9-speaker/desktop/image-gallery-3_nepuxd.jpg"
       }
     },
     "others": [
@@ -465,27 +464,27 @@
         "slug": "zx7-speaker",
         "name": "ZX7 Speaker",
         "image": {
-          "mobile": "./assets/shared/mobile/image-zx7-speaker.jpg",
-          "tablet": "./assets/shared/tablet/image-zx7-speaker.jpg",
-          "desktop": "./assets/shared/desktop/image-zx7-speaker.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/mobile/image-zx7-speaker_wd1xil.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-zx7-speaker_d0wiup.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/desktop/image-zx7-speaker_pm9awd.jpg"
         }
       },
       {
         "slug": "xx99-mark-one-headphones",
         "name": "XX99 Mark I",
         "image": {
-          "mobile": "./assets/shared/mobile/image-xx99-mark-one-headphones.jpg",
-          "tablet": "./assets/shared/tablet/image-xx99-mark-one-headphones.jpg",
-          "desktop": "./assets/shared/desktop/image-xx99-mark-one-headphones.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/mobile/image-xx99-mark-one-headphones_kidtwy.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-xx99-mark-one-headphones_enil8a.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-xx99-mark-one-headphones_jtnhue.jpg"
         }
       },
       {
         "slug": "xx59-headphones",
         "name": "XX59",
         "image": {
-          "mobile": "./assets/shared/mobile/image-xx59-headphones.jpg",
-          "tablet": "./assets/shared/tablet/image-xx59-headphones.jpg",
-          "desktop": "./assets/shared/desktop/image-xx59-headphones.jpg"
+          "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/mobile/image-xx59-headphones_mmx11k.jpg",
+          "tablet": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958923/audiophile/assets/shared/tablet/image-xx59-headphones_s6wlub.jpg",
+          "desktop": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-xx59-headphones_upcy2f.jpg"
         }
       }
     ]

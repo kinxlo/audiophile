@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { StoreContext } from '../contexts/StoreContext'
 import DetailNavbar from '../components/DetailNavbar'
+import FooterBanner from '../components/FooterBanner'
+import Category from '../components/Category'
 import '../style/DetailPage.scss'
 
-const Details = () => {
+const Details = (props) => {
+  const { products } = useContext(StoreContext)
+
+  const productSlug = props.match.params.slug
+
+  // const productDetails = products.filter((product) => {
+  //   return product.slug === productSlug
+  // })
+
+  // console.log(productDetails[0].name)
+
   return (
     <div>
       <DetailNavbar />
@@ -27,7 +40,7 @@ const Details = () => {
             <h4>$ 2,999</h4>
             <div className='number'>
               <span className='minus'>-</span>
-              <input type='text' value='1' />
+              <input type='text' defaultValue='1' />
               <span className='plus'>+</span>
             </div>
             <Link to='/'>
@@ -79,35 +92,71 @@ const Details = () => {
           </div>
         </article>
       </section>
-      <section className='img-grid cc-container'>
-        <div class='grid'>
-          {/* <div> */}
-          <img
-            className='img-top'
-            src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-best-gear_a5jy1y.jpg'
-            alt=''
-          />
-          {/* </div> */}
-          <div class='span-row-2'>
-            {/* <div> */}
+      <section className='cc-container'>
+        <div className='img-grid'>
+          <div className='item-1 item'>
             <img
-              className='img-right'
-              src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-best-gear_a5jy1y.jpg'
-              alt=''
+              src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958934/audiophile/assets/product-xx99-mark-two-headphones/desktop/image-gallery-1_ctzbil.jpg'
+              alt='img-logo'
             />
-            {/* </div> */}
           </div>
-          <div>
-            {/* <div> */}
+          <div className='item-2 item'>
             <img
-              className='img-bottom'
-              src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-best-gear_a5jy1y.jpg'
-              alt=''
+              src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958935/audiophile/assets/product-xx99-mark-two-headphones/desktop/image-gallery-3_mq4nf4.jpg'
+              alt='img-logo'
             />
-            {/* </div> */}
+          </div>
+          <div className='item-3 item'>
+            <img
+              src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958934/audiophile/assets/product-xx99-mark-two-headphones/desktop/image-gallery-2_xxc8rb.jpg'
+              alt='img-logo'
+            />
           </div>
         </div>
       </section>
+      <section className='cc-container suggestion-section'>
+        <h2>you may also like</h2>
+        <div className='suggestion-item-container'>
+          <article>
+            <div>
+              <img
+                src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-xx99-mark-one-headphones_jtnhue.jpg'
+                alt='logo'
+              />
+            </div>
+            <h4>XX99 MARK I</h4>
+            <Link to='/'>
+              <button>See product</button>
+            </Link>
+          </article>
+          <article>
+            <div>
+              <img
+                src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-xx59-headphones_upcy2f.jpg'
+                alt='logo'
+              />
+            </div>
+            <h4>XX59</h4>
+            <Link to='/'>
+              <button>See product</button>
+            </Link>
+          </article>
+          <article>
+            <div>
+              <img
+                src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/desktop/image-zx9-speaker_vypqdj.jpg'
+                alt='logo'
+              />
+            </div>
+            <h4>ZX9 SPEAKER</h4>
+            <Link to='/'>
+              <button>See product</button>
+            </Link>
+          </article>
+        </div>
+      </section>
+      <Category />
+      <FooterBanner />
     </div>
   )
 }
