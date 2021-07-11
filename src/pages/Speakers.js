@@ -14,19 +14,14 @@ const Speakers = () => {
 
   // console.log(productList);
 
-  const speakers = productList.map((speaker) => {
-    return <ItemBox key={speaker.id} item={speaker} />
-  })
-
   return (
     <div>
-      <ItemHeader title = {'speakers'}/>
+      <ItemHeader title={'speakers'} />
       <section className='cc-container'>
         {/* A VERY DYNAMIC SECTION. ITEMBOX IS A DYNAMIC COMPONENT ITS DATA MUST CHANGE DEPENDING ON ITS PROPS */}
-        {/* <ItemBox />
-          <ItemBox />
-          <ItemBox /> */}
-        {speakers}
+        {productList.map((speaker) => {
+          return <ItemBox key={speaker.id} item={speaker} />
+        })}
       </section>
       <Category />
       <FooterBanner />

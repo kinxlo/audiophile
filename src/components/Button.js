@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Button() {
+function Button(props) {
     return (
         <div>
             <button>see Product</button>

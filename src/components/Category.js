@@ -15,7 +15,7 @@ const Category = () => {
         <div className='mask'>
           <div className='category-text'>
             <h1>headphones</h1>
-            <Link to='/'>
+            <Link to='/headphones'>
               shop <FaChevronRight className='icon' />
             </Link>
           </div>
@@ -30,7 +30,7 @@ const Category = () => {
         <div className='mask'>
           <div className='category-text'>
             <h1>Speakers</h1>
-            <Link to='/'>
+            <Link to='/speakers'>
               shop <FaChevronRight className='icon' />
             </Link>
           </div>
@@ -45,7 +45,7 @@ const Category = () => {
         <div className='mask'>
           <div className='category-text'>
             <h1>Earphones</h1>
-            <Link to='/'>
+            <Link to='/earphones'>
               shop <FaChevronRight className='icon' />
             </Link>
           </div>

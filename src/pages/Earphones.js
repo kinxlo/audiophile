@@ -14,19 +14,14 @@ const Earphones = () => {
 
   // console.log(productList);
 
-  const earphones = productList.map((earphone) => {
-    return <ItemBox key={earphone.id} item={earphone} />
-  })
-
   return (
     <div>
-      <ItemHeader title = {'earphones'} />
+      <ItemHeader title={'earphones'} />
       <section className='cc-container'>
         {/* A VERY DYNAMIC SECTION. ITEMBOX IS A DYNAMIC COMPONENT ITS DATA MUST CHANGE DEPENDING ON ITS PROPS */}
-        {/* <ItemBox />
-        <ItemBox />
-        <ItemBox /> */}
-        {earphones}
+        {productList.map((earphone) => {
+          return <ItemBox key={earphone.id} item={earphone} />
+        })}
       </section>
       <Category />
       <FooterBanner />

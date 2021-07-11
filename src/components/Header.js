@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import '../style/Header.scss'
+import Button from './Button'
 
 function Header() {
   return (
@@ -14,7 +15,8 @@ function Header() {
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </p>
-          <button>See product</button>
+          {/* <button>See product</button> */}
+          <Button />
         </section>
       </div>
     </header>
@@ -22,4 +24,4 @@ function Header() {
 }
 
 export default Header
-// 
+//
