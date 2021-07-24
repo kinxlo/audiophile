@@ -28,17 +28,3 @@ function App() {
 
 export default App
 
-// {/* <Route exact path='/'>
-//   <Home />
-// </Route>
-// <Route path='/headphones'>
-//   <StoreContextProvider>
-//     <Headphones />
-//   </StoreContextProvider>
-// </Route>
-// <Route path='/speakers'>
-//   <Speakers />
-// </Route>
-// <Route path='/earphones'>
-//   <Earphones />
-// </Route> */}

@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { StoreContext } from '../contexts/StoreContext'
 import Header from '../components/Header'
 import Category from '../components/Category'
 import Banner from '../components/Banner'
@@ -6,11 +7,15 @@ import FooterBanner from '../components/FooterBanner'
 
 // the home page component
 const Home = () => {
+  const { products } = useContext(StoreContext)
+  // console.log(products)
+
   return (
     <>
       <Header />
       <Category />
-      <Banner />
+      {/* the banner component takes a props containing the products */}
+      <Banner products={products} />
       <FooterBanner />
     </>
   )

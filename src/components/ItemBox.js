@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import Button from './Button'
 
 const ItemBox = (props) => {
-  const { name, description, image, slug } = props.item
+  const { name, description, image, slug } = props.product
 
   return (
     <>
@@ -17,15 +17,14 @@ const ItemBox = (props) => {
             <h3>New product</h3>
             <h1>{name}</h1>
             <p className='cc-hero-desc'>{description}</p>
-            {/* <Link
+            <Link
               to={{
                 pathname: `/details/${slug}`,
-                state: props.item
+                state: props.product.slug,
               }}
             >
-              <button>See product</button>
-            </Link> */}
-            <Button />
+              <Button />
+            </Link>
           </div>
         </article>
       </section>

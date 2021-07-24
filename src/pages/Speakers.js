@@ -20,7 +20,7 @@ const Speakers = () => {
       <section className='cc-container'>
         {/* A VERY DYNAMIC SECTION. ITEMBOX IS A DYNAMIC COMPONENT ITS DATA MUST CHANGE DEPENDING ON ITS PROPS */}
         {productList.map((speaker) => {
-          return <ItemBox key={speaker.id} item={speaker} />
+          return <ItemBox key={speaker.id} product={speaker} />
         })}
       </section>
       <Category />

@@ -20,7 +20,7 @@ const Earphones = () => {
       <section className='cc-container'>
         {/* A VERY DYNAMIC SECTION. ITEMBOX IS A DYNAMIC COMPONENT ITS DATA MUST CHANGE DEPENDING ON ITS PROPS */}
         {productList.map((earphone) => {
-          return <ItemBox key={earphone.id} item={earphone} />
+          return <ItemBox key={earphone.id} product={earphone} />
         })}
       </section>
       <Category />
