@@ -1,15 +1,20 @@
-import { Counter } from '../pages/Details'
+import { useState, useContext } from 'react'
+import { UserContext } from '../contexts/UserContext'
 import '../style/CartModal.scss'
 
 const CartModal = ({ handleClose, show }) => {
   const showHideClassName = show ? 'modal display-block' : 'modal display-none'
+
+  const { user } = useContext(UserContext)
+
+  console.log(user)
 
   return (
     <div className={showHideClassName}>
       <section className='modal-main'>
         <article>
           <div className='cart-title'>
-            <h3>Cart (3)</h3>
+            <h3>Cart ({user.length})</h3>
             <small>Remove all</small>
           </div>
           <CartDetails />
@@ -19,7 +24,7 @@ const CartModal = ({ handleClose, show }) => {
             <p>TOTAL</p>
             <p>$5,396</p>
           </div>
-          <button className='checkout-btn' type='button' onClick={handleClose}>
+          <button className='check' type='button' onClick={handleClose}>
             Check out
           </button>
         </article>
@@ -33,6 +38,8 @@ export default CartModal
 // *CART DETAILS
 
 const CartDetails = () => {
+  const [quantity, setQuantity] = useState(1)
+
   return (
     <div className='cart-detail'>
       <div className='img-price'>
@@ -45,7 +52,23 @@ const CartDetails = () => {
           <p className='price'>$2,999</p>
         </div>
       </div>
-      <Counter />
+      <form className='counter-form'>
+        <section className='counter'>
+          <span
+            className='minus-btn'
+            onClick={() =>
+              quantity <= 1 ? setQuantity(1) : setQuantity(quantity - 1)
+            }
+          >
+            -
+          </span>
+          <span className='num-value'>{quantity}</span>
+          <span className='plus-btn' onClick={() => setQuantity(quantity + 1)}>
+            +
+          </span>
+        </section>
+        {/* <button>add to cart</button> */}
+      </form>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { useLocation } from 'react-router-dom'
 import DetailNavbar from '../components/DetailNavbar'
 import FooterBanner from '../components/FooterBanner'
@@ -6,8 +6,8 @@ import Category from '../components/Category'
 import '../style/DetailPage.scss'
 // import Button from '../components/Button'
 import Sugestion from '../components/Sugestion'
-// import { ProductsContext } from '../contexts/ProductsContext'
-import CartModal from '../components/CartModal'
+import { UserContext } from '../contexts/UserContext'
+// import CartModal from '../components/CartModal'
 
 const Details = ({ products }) => {
   //  * using the useLocation hook, we get the details of the current data
@@ -17,8 +17,6 @@ const Details = ({ products }) => {
   let productDetails = products.filter((product) => {
     return product.slug === state
   })
-
-  console.log(productDetails)
 
   return (
     <div>
@@ -41,9 +39,7 @@ const Details = ({ products }) => {
               <p className='cc-hero-desc'>{productDetails[0].description}</p>
               <h4>${productDetails[0].price}</h4>
               {/* counter */}
-              <Counter>
-                <button className='counter-btn'>Add to cart</button>
-              </Counter>
+              <Counter product={productDetails[0]} />
               {/* counter */}
             </div>
           </article>
@@ -97,13 +93,24 @@ const Details = ({ products }) => {
 
 export default Details
 
-export const Counter = ({ children }) => {
+export const Counter = ({ product }) => {
   const [quantity, setQuantity] = useState(1)
+  const { dispatch } = useContext(UserContext)
+
+  const addToCart = (e) => {
+    e.preventDefault()
+    dispatch({ type: 'ADD_ITEM', payload: { product, quantity } })
+  }
 
   return (
     <form className='counter-form'>
       <section className='counter'>
-        <span className='minus-btn' onClick={() => setQuantity(quantity - 1)}>
+        <span
+          className='minus-btn'
+          onClick={() =>
+            quantity <= 1 ? setQuantity(1) : setQuantity(quantity - 1)
+          }
+        >
           -
         </span>
         <span className='num-value'>{quantity}</span>
@@ -111,7 +118,7 @@ export const Counter = ({ children }) => {
           +
         </span>
       </section>
-      {children}
+      <button onClick={addToCart}>add to cart</button>
     </form>
   )
 }
