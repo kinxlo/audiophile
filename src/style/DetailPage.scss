@@ -14,7 +14,7 @@ button {
     width: 160px;
 }
 
-.back{
+.back {
     margin-top: 5rem;
     // margin-bottom: -15rem;
 
@@ -36,27 +36,36 @@ h4 {
     margin-bottom: 42px;
 }
 
-.number {
-    padding-left: 0 !important;
-    width: fit-content;
-    display: inline-block;
-    background-color: $main-white-l;
-    margin-right: 1rem;
-    // padding: 0 1rem;
+.counter-form {
+    // border: 1px solid red;
+    display: flex;
+    align-items: center;
+
+    
+    .counter {
+        // border: 1px solid blue;
+        display: flex;
+        align-items: center;
+        width: 120px;
+        height: 48px;
+        background: $main-white-l;
+        // padding: 1rem 0;
+
+        .num-value {
+            font-weight: 700;
+        }
+
+        span{
+            width: 40px;
+        }
+    }
+}
+
+.counter-btn{
+    margin-left: 1rem;
 }
 
 
-
-input {
-    border: none;
-    width: 120px;
-    height: 48px;
-    text-align: center;
-    font-size: 26px;
-    display: inline-block;
-    vertical-align: middle;
-    background-color: $main-white-l;
-}
 
 .features-and-box {
     // border: 1px solid red;

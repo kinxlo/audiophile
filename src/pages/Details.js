@@ -1,34 +1,30 @@
-import React, { useState, useContext } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import React, { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import DetailNavbar from '../components/DetailNavbar'
 import FooterBanner from '../components/FooterBanner'
 import Category from '../components/Category'
 import '../style/DetailPage.scss'
 // import Button from '../components/Button'
 import Sugestion from '../components/Sugestion'
-import { StoreContext } from '../contexts/StoreContext'
+// import { ProductsContext } from '../contexts/ProductsContext'
+import CartModal from '../components/CartModal'
 
-const Details = () => {
-  // *set modal State in details page to false
-  const [show, isShown] = useState(false)
-
+const Details = ({ products }) => {
   //  * using the useLocation hook, we get the details of the current data
-  const { products } = useContext(StoreContext)
+  // const { products } = useContext(ProductsContext)
   const { state } = useLocation()
 
-  // *for us to get the details from the suggestion, on has to compare the products from the data to that of the state gotten from the "other" suggestion..
   let productDetails = products.filter((product) => {
     return product.slug === state
   })
 
-  // handle button event to show the modal
-  const handleClick = () => {
-    console.log(`show modal`)
-  }
+  console.log(productDetails)
 
   return (
     <div>
       <DetailNavbar />
+      {/* the modal of the cart  */}
+
       <section className='cc-container'>
         <div className='back'>go back</div>
         <section className='item-box'>
@@ -44,14 +40,11 @@ const Details = () => {
               <h1>{productDetails[0].name}</h1>
               <p className='cc-hero-desc'>{productDetails[0].description}</p>
               <h4>${productDetails[0].price}</h4>
-              <div className='number'>
-                <span className='minus'>-</span>
-                <input type='text' defaultValue='1' />
-                <span className='plus'>+</span>
-              </div>
-              {/* <Link to='/'> */}
-              <button onClick={handleClick}>Add to cart</button>
-              {/* </Link> */}
+              {/* counter */}
+              <Counter>
+                <button className='counter-btn'>Add to cart</button>
+              </Counter>
+              {/* counter */}
             </div>
           </article>
         </section>
@@ -103,3 +96,22 @@ const Details = () => {
 }
 
 export default Details
+
+export const Counter = ({ children }) => {
+  const [quantity, setQuantity] = useState(1)
+
+  return (
+    <form className='counter-form'>
+      <section className='counter'>
+        <span className='minus-btn' onClick={() => setQuantity(quantity - 1)}>
+          -
+        </span>
+        <span className='num-value'>{quantity}</span>
+        <span className='plus-btn' onClick={() => setQuantity(quantity + 1)}>
+          +
+        </span>
+      </section>
+      {children}
+    </form>
+  )
+}

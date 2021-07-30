@@ -4,6 +4,8 @@ import Button from '../components/Button'
 import '../style/Banner.scss'
 
 const Banner = ({ products }) => {
+
+  
   const zx9_speaker = products.filter((product) => {
     return product.slug === 'zx9-speaker'
   })
@@ -34,7 +36,7 @@ const Banner = ({ products }) => {
               <Link
                 to={{
                   pathname: `/details/${product.slug}`,
-                  state: product,
+                  state: product.slug,
                 }}
               >
                 <Button />
@@ -52,7 +54,7 @@ const Banner = ({ products }) => {
               <Link
                 to={{
                   pathname: `/details/${product.slug}`,
-                  state: product,
+                  state: product.slug,
                 }}
               >
                 <Button />
@@ -72,7 +74,7 @@ const Banner = ({ products }) => {
               <Link
                 to={{
                   pathname: `/details/${product.slug}`,
-                  state: product,
+                  state: product.slug,
                 }}
               >
                 <Button />

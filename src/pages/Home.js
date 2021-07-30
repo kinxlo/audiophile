@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { StoreContext } from '../contexts/StoreContext'
+import { ProductsContext } from '../contexts/ProductsContext'
 import Header from '../components/Header'
 import Category from '../components/Category'
 import Banner from '../components/Banner'
@@ -7,8 +7,7 @@ import FooterBanner from '../components/FooterBanner'
 
 // the home page component
 const Home = () => {
-  const { products } = useContext(StoreContext)
-  // console.log(products)
+  const { products } = useContext(ProductsContext)
 
   return (
     <>
