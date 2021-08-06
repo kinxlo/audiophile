@@ -42,6 +42,8 @@ function App() {
         <Route path='/earphones'>
           <Earphones earphones={earphones} />
         </Route>
+
+        
         <Route path='/details/:slug'>
           <Details products={products} />
         </Route>

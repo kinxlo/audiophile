@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import { BrowserRouter } from 'react-router-dom'
 import ProductsContextProvider from './contexts/ProductsContext'
-import UserContextProvider from './contexts/UserContext'
+import CartContextProvider from './contexts/CartContext'
 
 ReactDOM.render(
-  <UserContextProvider>
+  <CartContextProvider>
     <ProductsContextProvider>
       <BrowserRouter>
         <App />
       </BrowserRouter>
     </ProductsContextProvider>
-  </UserContextProvider>,
+  </CartContextProvider>,
   document.getElementById('root')
 )

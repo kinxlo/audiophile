@@ -6,7 +6,7 @@ import Category from '../components/Category'
 import '../style/DetailPage.scss'
 // import Button from '../components/Button'
 import Sugestion from '../components/Sugestion'
-import { UserContext } from '../contexts/UserContext'
+import { CartContext } from '../contexts/CartContext'
 // import CartModal from '../components/CartModal'
 
 const Details = ({ products }) => {
@@ -95,11 +95,23 @@ export default Details
 
 export const Counter = ({ product }) => {
   const [quantity, setQuantity] = useState(1)
-  const { dispatch } = useContext(UserContext)
+  const { dispatch } = useContext(CartContext)
+
+  // *product distructuring
+  const { name, image, price } = product
+  const { desktop } = image
+
+  // console.log(name, price, desktop)
+  const productItem = {
+    name: name,
+    amount: price,
+    quantity: quantity,
+    image: desktop,
+  }
 
   const addToCart = (e) => {
     e.preventDefault()
-    dispatch({ type: 'ADD_ITEM', payload: { product, quantity } })
+    dispatch({ type: 'ADD_ITEM', payload: productItem })
   }
 
   return (

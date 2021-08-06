@@ -42,6 +42,12 @@
         }
     }
 
+    .cart-overflow {
+        // border: 1px solid red !important;
+        height: 18rem !important;
+        overflow-y: scroll !important;
+    }
+
     .total {
         height: fit-content;
         display: flex;
