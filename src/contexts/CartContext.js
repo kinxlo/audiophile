@@ -1,22 +1,54 @@
-import React, { createContext, useReducer } from 'react'
+import React, { createContext, useReducer, useEffect } from 'react'
 import { CartReducer } from './Reducers/CartReducer'
+
+
 
 export const CartContext = createContext()
 
-const CartContextProvider = ({ children }) => {
-  const [cart, dispatch] = useReducer(CartReducer, [
+const initialState = {
+  loading: false,
+  cart: [
     // {
     //   id: 1,
-    //   name: 'speaker',
-    //   amount: 0,
+    //   name: 'Samsung Galaxy S7',
+    //   price: 599.99,
+    //   image: 'https://res.cloudinary.com/diqqf3eq2/image/upload/v1583368215/phone-2_ohtt5s.png',
     //   quantity: 1,
-    //   image:
-    //     'https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958922/audiophile/assets/cart/image-xx99-mark-two-headphones_gvsccy.jpg',
     // },
-  ])
+  ],
+  total: 0,
+  totalQuantity: 0,
+}
+
+const CartContextProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(CartReducer, initialState)
+
+  const addItem = (item, e) => {
+    e.preventDefault()
+    dispatch({ type: 'ADD_TO_CART', payload: item })
+  }
+
+  const removeAll = () => {
+    dispatch({ type: 'REMOVE_ALL' })
+  }
+
+  const increase = (id) => {
+    dispatch({ type: 'INCREASE', payload: id })
+  }
+
+  const decrease = (id) => {
+    dispatch({ type: 'DECREASE', payload: id })
+  }
+
+  useEffect(() => {
+    // console.log('hello')
+    dispatch({ type: 'GET_TOTALS' })
+  }, [state.cart])
 
   return (
-    <CartContext.Provider value={{ cart, dispatch }}>
+    <CartContext.Provider
+      value={{ ...state, addItem, removeAll, increase, decrease }}
+    >
       {children}
     </CartContext.Provider>
   )

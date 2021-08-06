@@ -5,28 +5,21 @@ import '../style/CartModal.scss'
 const CartModal = ({ handleClose, show }) => {
   const showHideClassName = show ? 'modal display-block' : 'modal display-none'
 
-  const { cart, dispatch } = useContext(CartContext)
-
-  let total = 0
-  cart.forEach((item) => {
-    total = total + item.amount * item.quantity
-    return total
-  })
-
-  const removeAll = () => {
-    dispatch({ type: 'REMOVE_ALL' })
-  }
+  const { cart, totalQuantity, total, removeAll } = useContext(CartContext)
+  // console.log(cart)
 
   return (
     <div className={showHideClassName}>
       <section className='modal-main'>
         <article>
           <div className='cart-title'>
-            <h3>Cart ( {cart.length} )</h3>
+            <h3>Cart ({totalQuantity})</h3>
             <small onClick={removeAll}>Remove all</small>
           </div>
           <div className='cart-overflow'>
-            <CartDetails cart={cart} dispatch={dispatch} />
+            {cart.map((cartItem) => {
+              return <CartItems key={cartItem.id} {...cartItem} />
+            })}
           </div>
         </article>
         <article>
@@ -47,59 +40,40 @@ export default CartModal
 
 // *CART DETAILS
 
-const CartDetails = ({ cart, dispatch }) => {
-  // const [quantitys, setQuantitys] = useState(item.quantity)
+const CartItems = ({ id, image, price, name, quantity }) => {
+  const { increase, decrease } = useContext(CartContext)
 
-  return cart.map((item, index) => {
-    let itemQuantity = item.quantity
-    // *product distructuring
-    const { name, image, amount } = item
-
-    const handleDecrement = (e) => {
-      let quantity = --e.target.nextElementSibling.textContent
-      if (quantity <= 1) {
-        quantity = 1
-      }
-    }
-
-    const handleIncrement = (e) => {
-      let quantity = parseInt(++e.target.previousElementSibling.textContent)
-
-      const product = {
-        name: name,
-        amount: amount,
-        quantity: quantity,
-        image: image,
-      }
-      dispatch({
-        type: 'UPDATE_EXISTING_QUANTITY',
-        payload: product,
-      })
-      // console.log(image)
-    }
-
-    return (
-      <div key={index} className='cart-detail'>
-        <div className='img-price'>
-          <img src={item.image} alt='' />
-          <div>
-            <p className='product-name'>{item.name}</p>
-            <p className='price'>{item.amount}</p>
-          </div>
+  return (
+    <div className='cart-detail'>
+      <div className='img-price'>
+        <img src={image} alt={name} />
+        <div>
+          <p className='product-name'>{name}</p>
+          <p className='price'>{price}</p>
         </div>
-        <form className='counter-form'>
-          <section className='counter'>
-            <span className='minus-btn' onClick={handleDecrement}>
-              -
-            </span>
-            <span className='num-value'>{itemQuantity}</span>
-            <span className='plus-btn' onClick={handleIncrement}>
-              +
-            </span>
-          </section>
-          {/* <button>add to cart</button> */}
-        </form>
       </div>
-    )
-  })
+      <form className='counter-form'>
+        <section className='counter'>
+          <span
+            className='minus-btn'
+            onClick={() => {
+              decrease(id)
+            }}
+          >
+            -
+          </span>
+          <span className='num-value'>{quantity}</span>
+          <span
+            className='plus-btn'
+            onClick={() => {
+              increase(id)
+            }}
+          >
+            +
+          </span>
+        </section>
+        {/* <button>add to cart</button> */}
+      </form>
+    </div>
+  )
 }

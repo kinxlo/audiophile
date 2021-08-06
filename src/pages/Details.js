@@ -95,42 +95,39 @@ export default Details
 
 export const Counter = ({ product }) => {
   const [quantity, setQuantity] = useState(1)
-  const { dispatch } = useContext(CartContext)
+  const { addItem } = useContext(CartContext)
 
-  // *product distructuring
-  const { name, image, price } = product
+  const { id, name, image, price } = product
   const { desktop } = image
+  // console.log(id, name, price, desktop)
 
-  // console.log(name, price, desktop)
-  const productItem = {
+  const item = {
+    id: id,
     name: name,
-    amount: price,
-    quantity: quantity,
     image: desktop,
+    price: price,
+    quantity: quantity,
   }
 
-  const addToCart = (e) => {
-    e.preventDefault()
-    dispatch({ type: 'ADD_ITEM', payload: productItem })
+  const increment = () => {
+    setQuantity(quantity + 1)
+  }
+  const decrement = () => {
+    setQuantity(quantity - 1)
   }
 
   return (
     <form className='counter-form'>
       <section className='counter'>
-        <span
-          className='minus-btn'
-          onClick={() =>
-            quantity <= 1 ? setQuantity(1) : setQuantity(quantity - 1)
-          }
-        >
+        <span className='minus-btn' onClick={decrement}>
           -
         </span>
         <span className='num-value'>{quantity}</span>
-        <span className='plus-btn' onClick={() => setQuantity(quantity + 1)}>
+        <span className='plus-btn' onClick={increment}>
           +
         </span>
       </section>
-      <button onClick={addToCart}>add to cart</button>
+      <button onClick={(e) => addItem(item, e)}>add to cart</button>
     </form>
   )
 }
