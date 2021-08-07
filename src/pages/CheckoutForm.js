@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import CheckoutModal from '../components/CheckoutModal'
 import DetailNavbar from '../components/DetailNavbar'
 import '../style/CheckoutForm.scss'
 
@@ -7,7 +8,7 @@ const CheckoutForm = () => {
     <div>
       <DetailNavbar />
       <section className='form-background'>
-        <h1>texting...</h1>
+        <h1 className='cc-container'>go back</h1>
         <div className='form-summary cc-container'>
           <div className='form-container'>
             <h1>CHECKOUT</h1>
@@ -106,23 +107,23 @@ const CheckoutForm = () => {
 export default CheckoutForm
 
 const SummarySection = () => {
+  // *set modal State in details page to false
+  const [show, isShown] = useState(false)
+  // handle button event to show the modal
+  const showModal = (e) => {
+    e.preventDefault()
+    isShown(true)
+  }
+
+  const hideModal = () => {
+    isShown(false)
+  }
+
   return (
     <div className='summary-container'>
       <h3>summary</h3>
       <section className='cart-overflow'>
-        <div className='item'>
-          <div className='img-price'>
-            <img
-              src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958922/audiophile/assets/cart/image-xx59-headphones_ityj1l.jpg'
-              alt=''
-            />
-            <div>
-              <p className='product-name'>name</p>
-              <p className='price'>price</p>
-            </div>
-          </div>
-          <h6>x1</h6>
-        </div>
+        <SummaryItem />
       </section>
       <section className='summary-detail'>
         <div>
@@ -142,7 +143,26 @@ const SummarySection = () => {
           <p>$5,446</p>
         </div>
       </section>
-      <button>continue & pay</button>
+      <button onClick={showModal}>continue & pay</button>
+      <CheckoutModal handleClose={hideModal} show={show} />
+    </div>
+  )
+}
+
+export const SummaryItem = () => {
+  return (
+    <div className='item'>
+      <div className='img-price'>
+        <img
+          src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958922/audiophile/assets/cart/image-xx59-headphones_ityj1l.jpg'
+          alt=''
+        />
+        <div>
+          <p className='product-name'>name</p>
+          <p className='price'>price</p>
+        </div>
+      </div>
+      <h6>x1</h6>
     </div>
   )
 }

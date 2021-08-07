@@ -6,10 +6,17 @@
     margin-bottom: -200px;
     padding-bottom: 200px;
 
+    h1 {
+        padding-top: 79px;
+        margin-bottom: 38px;
+        font-size: 15px;
+    }
+
     .form-summary {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
+
     }
 
     .form-container {
