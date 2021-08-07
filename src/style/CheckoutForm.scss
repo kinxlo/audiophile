@@ -19,7 +19,7 @@
         background: $main-white-a;
         padding: 48px;
 
-        h1{
+        h1 {
             font-size: 32px;
             font-weight: 700;
             text-transform: uppercase;
@@ -40,6 +40,8 @@
 }
 
 form {
+
+    margin-bottom: 53px;
 
     label {
         font-weight: 700;
@@ -76,4 +78,87 @@ form {
             }
         }
     }
+
+    // shipping form
+    .shipping-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+
+        // border: 1px solid blue;
+        .address {
+            grid-column: span 2 / auto;
+            width: 100%;
+
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+    div {
+        // border: 1px solid red;
+        width: 19.3rem;
+        // height: 5rem;
+        // margin: 0 auto;
+
+        input {
+            width: 100%;
+            border: 1px solid #cfcfcf;
+            padding: 0 24px;
+            border-radius: 8px;
+            height: 3.5rem;
+        }
+    }
+
+    // payment form
+    .payment-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+
+        input[type='radio'] {
+            width: fit-content;
+            height: fit-content;
+        }
+
+        input[type='radio']:checked:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: -3.5px;
+            left: -1px;
+            position: relative;
+            background-color: #ffa500;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            // border: 2px solid white;
+        }
+
+        .radio {
+            border: 1px solid #cfcfcf;
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+            height: 56px;
+            padding: 0 24px;
+
+            label {
+                margin: 0;
+            }
+        }
+
+        .payment-title {
+            grid-row: span 3 / auto;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+
+        .span-row-2 {
+            grid-row: span 2 / auto;
+        }
+    }
+
 }

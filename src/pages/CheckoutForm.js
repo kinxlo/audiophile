@@ -32,10 +32,69 @@ const CheckoutForm = () => {
                 </div>
               </section>
             </form>
+
             {/* shipping info */}
-            <form action=''></form>
+            <form action=''>
+              <h5 className='form-title'>Shipping Info</h5>
+              <section className='shipping-details'>
+                <div className='address'>
+                  <label htmlFor='address'>Address</label>
+                  <input type='text' placeholder='1137 Williams Avenue' />
+                </div>
+                <div>
+                  <label htmlFor='zip-code'>Zip Code</label>
+                  <br />
+                  <input type='number' placeholder='10001' />
+                </div>
+                <div>
+                  <label htmlFor='city'>City</label>
+                  <br />
+                  <input type='text' placeholder='New York' />
+                </div>
+                <div>
+                  <label htmlFor='country'>Country</label>
+                  <br />
+                  <input type='text' placeholder='United State' />
+                </div>
+              </section>
+            </form>
+
             {/* payment details */}
-            <form action=''></form>
+            <form action=''>
+              <h5 className='form-title'>payment details</h5>
+              <section className='payment-details'>
+                <div className='payment-title'>payment method</div>
+                <div className='span-row-2 radio'>
+                  <input
+                    type='radio'
+                    id='html'
+                    name='payment-type'
+                    value='HTML'
+                  />
+                    <label htmlFor='html'>e-Money</label>
+                </div>
+
+                <div className='radio'>
+                  <input
+                    type='radio'
+                    id='css'
+                    name='payment-type'
+                    value='CSS'
+                  />
+                    <label htmlFor='css'>Cash On Delivery</label>
+                </div>
+                <div>
+                  <label htmlFor='e-money-number'>e-Money Number</label>
+                  <br />
+                  <input type='number' placeholder='238521993' />
+                </div>
+                <div>
+                  <label htmlFor='pin'>e-Money PIN</label>
+                  <br />
+                  <input type='password' placeholder='6891' />
+                </div>
+              </section>
+            </form>
           </div>
           <div className='summary-container'>Item 2</div>
         </div>
