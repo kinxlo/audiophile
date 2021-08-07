@@ -96,7 +96,7 @@ const CheckoutForm = () => {
               </section>
             </form>
           </div>
-          <div className='summary-container'>Item 2</div>
+          <SummarySection />
         </div>
       </section>
     </div>
@@ -104,3 +104,45 @@ const CheckoutForm = () => {
 }
 
 export default CheckoutForm
+
+const SummarySection = () => {
+  return (
+    <div className='summary-container'>
+      <h3>summary</h3>
+      <section className='cart-overflow'>
+        <div className='item'>
+          <div className='img-price'>
+            <img
+              src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958922/audiophile/assets/cart/image-xx59-headphones_ityj1l.jpg'
+              alt=''
+            />
+            <div>
+              <p className='product-name'>name</p>
+              <p className='price'>price</p>
+            </div>
+          </div>
+          <h6>x1</h6>
+        </div>
+      </section>
+      <section className='summary-detail'>
+        <div>
+          <p>Total</p>
+          <p>$5,396</p>
+        </div>
+        <div>
+          <p>shipping</p>
+          <p>$50</p>
+        </div>
+        <div>
+          <p>vat(included)</p>
+          <p>$1,079</p>
+        </div>
+        <div>
+          <p>Grand Total</p>
+          <p>$5,446</p>
+        </div>
+      </section>
+      <button>continue & pay</button>
+    </div>
+  )
+}
