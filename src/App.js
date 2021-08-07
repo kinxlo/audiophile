@@ -7,6 +7,7 @@ import Speakers from './pages/Speakers'
 import Earphones from './pages/Earphones'
 import Footer from './components/Footer'
 import Details from './pages/Details'
+import CheckoutForm from './pages/CheckoutForm'
 
 import './App.scss'
 import { ProductsContext } from './contexts/ProductsContext'
@@ -43,11 +44,12 @@ function App() {
           <Earphones earphones={earphones} />
         </Route>
 
-        
         <Route path='/details/:slug'>
           <Details products={products} />
         </Route>
-
+        <Route path='/checkout'>
+          <CheckoutForm />
+        </Route>
         {/* a better structure */}
       </Switch>
       <Footer />

@@ -1,0 +1,79 @@
+@import '../style/variables';
+
+.form-background {
+    background: $main-white;
+    height: 100%;
+
+    .form-summary {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    .form-container {
+        grid-column: span 2 / auto;
+        // border: 1px solid red;
+        width: 45.625rem;
+        height: 70.375rem;
+        border-radius: 8px;
+        background: $main-white-a;
+        padding: 48px;
+
+        h1{
+            font-size: 32px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.14286px;
+            margin-bottom: 41px;
+        }
+
+    }
+
+    .summary-container {
+        width: 21.9rem;
+        height: 38.25rem;
+        border-radius: 8px;
+        background: $main-white-a;
+    }
+
+
+}
+
+form {
+
+    label {
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    .form-title {
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: $accent-color;
+        letter-spacing: 0.928571px
+    }
+
+    // billing form
+    .billing-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+        // border: 1px solid blue;
+
+        div {
+            // border: 1px solid red;
+            width: 19.3rem;
+            // height: 5rem;
+            // margin: 0 auto;
+
+            input {
+                width: 100%;
+                border: 1px solid #cfcfcf;
+                padding: 0 24px;
+                border-radius: 8px;
+                height: 3.5rem;
+            }
+        }
+    }
+}

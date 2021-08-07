@@ -1,5 +1,6 @@
 import { useState, useContext } from 'react'
 import { CartContext } from '../contexts/CartContext'
+import { Link } from 'react-router-dom'
 import '../style/CartModal.scss'
 
 const CartModal = ({ handleClose, show }) => {
@@ -27,9 +28,11 @@ const CartModal = ({ handleClose, show }) => {
             <p>TOTAL</p>
             <p>${total}</p>
           </div>
-          <button className='check' type='button' onClick={handleClose}>
-            Check out
-          </button>
+          <Link to='/checkout'>
+            <button onClick={handleClose} className='check' type='button'>
+              Check out
+            </button>
+          </Link>
         </article>
       </section>
     </div>

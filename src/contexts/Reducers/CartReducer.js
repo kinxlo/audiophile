@@ -7,15 +7,14 @@ export const CartReducer = (state, action) => {
           cart: [action.payload],
         }
       }else{
-        state.cart.map((item) => {
-          if(item.name !== action.payload.name){
-            return item
-          }else{
-            
+        let modifiedCart = state.cart.map((cartItem) => {
+          if(cartItem.id === action.payload.id){
+            return {...cartItem, quantity: action.payload.quantity}
           }
+          return cartItem
         })
+        return {...state, cart: modifiedCart}
       }
-      break
 
     case 'INCREASE':
       let tempCart = state.cart.map((cartItem) => {
