@@ -26,7 +26,7 @@ const CheckoutModal = ({ handleClose, show }) => {
             <p>$5,446</p>
           </div>
         </div>
-        <button>BACK TO HOME</button>
+        <button onClick={handleClose}>BACK TO HOME</button>
       </section>
     </div>
   )

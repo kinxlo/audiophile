@@ -52,7 +52,7 @@ function App() {
         </Route>
         {/* a better structure */}
       </Switch>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

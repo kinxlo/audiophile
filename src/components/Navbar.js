@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { FaBars } from 'react-icons/fa'
 import '../style/Navbar.scss'
 
 import CartModal from './CartModal'
@@ -18,8 +19,51 @@ function Navbar() {
   }
   return (
     <>
-      <nav className='cc-container'>
-        <CartModal show={show} handleClose={hideModal} />
+      <CartModal show={show} handleClose={hideModal} />
+      <nav className='navbar navbar-expand-lg cc-container'>
+        <Link to='' className='navbar-brand'>
+          <img
+            src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/desktop/logo_usidfy.svg'
+            alt='LOGO'
+          />
+        </Link>
+        <button
+          className='navbar-toggler'
+          type='button'
+          data-toggle='collapse'
+          data-target='#navbarSupportedContent'
+          aria-controls='navbarSupportedContent'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+        >
+          <FaBars />
+        </button>
+
+        <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+          <ul className='navbar-nav m-auto'>
+            {/* <div> */}
+            <li>
+              <Link to='/'>Home</Link>
+            </li>
+            <li>
+              <Link to='/headphones'>Headphones</Link>
+            </li>
+            <li>
+              <Link to='/speakers'>Speakers</Link>
+            </li>
+            <li>
+              <Link to='/earphones'>Earphones</Link>
+            </li>
+            {/* </div> */}
+          </ul>
+          <img
+            onClick={showModal}
+            src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958942/audiophile/assets/shared/desktop/icon-cart_reoqc1.svg'
+            alt='Cart'
+          />
+        </div>
+      </nav>
+      {/* <nav className='cc-container'>
         <Link to='/'>
           <img
             src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/desktop/logo_usidfy.svg'
@@ -47,7 +91,7 @@ function Navbar() {
           src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958942/audiophile/assets/shared/desktop/icon-cart_reoqc1.svg'
           alt='Cart'
         />
-      </nav>
+      </nav> */}
       <hr className='cc-container' />
     </>
   )

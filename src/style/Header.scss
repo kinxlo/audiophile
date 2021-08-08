@@ -1,27 +1,21 @@
 @import '../style/variables';
+@import '../style/mixins';
 
 .home-header {
-    background-image: url('https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958928/audiophile/assets/home/desktop/image-hero_p8d4rz.jpg');
+    background-image: url('https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958930/audiophile/assets/home/mobile/image-header_an3oco.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 46rem;
+    height: 37.5rem;
     // padding: 0 10rem;
     color: $main-white;
 }
 
 .cc-hero-text {
-    
-    section {
-        // border: 1px solid red;
-        height: 21rem;
-        width: 50%;
-        margin: 10% 0;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-between;
-
-    }
+    // border: 1px solid red;
+    text-align: center;
+    margin: 0 24px;
+    padding-top: 5rem;
 
     h3 {
         font-size: 14px;
@@ -31,14 +25,61 @@
     }
 
     h1 {
-        font-size: 56px;
+        font-size: 36px;
         text-transform: uppercase;
         font-weight: 700;
+        margin: 16px 0 24px;
     }
 
     p {
         font-size: 15px;
         font-weight: 200;
-        width: 60%;
+        line-height: 25px;
+        margin-bottom: 28px;
     }
+}
+
+
+// ===========================
+// TABLET VIEW
+// ===========================
+@include respond(medium) {}
+
+
+// ===========================
+// DESKTOP VIEW
+// ===========================
+@include respond(xx-large) {
+
+    .home-header {
+        background-image: url('https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958928/audiophile/assets/home/desktop/image-hero_p8d4rz.jpg');
+        height: 46rem;
+    }
+
+    .cc-hero-text {
+        text-align: left;
+        padding-top: 0;
+
+        section {
+            // border: 1px solid red;
+            height: 21rem;
+            width: 50%;
+            margin: 10% 0;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+        }
+
+        h1 {
+            font-size: 56px;
+            margin: 0;
+        }
+
+        p {
+            width: 60%;
+        }
+    }
+
+
+
 }

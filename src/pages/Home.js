@@ -15,7 +15,7 @@ const Home = () => {
       <Category />
       {/* the banner component takes a props containing the products */}
       <Banner products={products} />
-      <FooterBanner />
+      {/* <FooterBanner /> */}
     </>
   )
 }

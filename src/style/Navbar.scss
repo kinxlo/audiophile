@@ -1,26 +1,47 @@
 @import '../style/variables';
+@import '../style/mixins';
+
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 0;
 
-    h1 {
-        font-size: 25px;
+    padding: 2rem 0 !important;
+
+    button{
+        width: fit-content;
     }
 
     li {
-        display: inline;
+        // display: inline;
         margin: 0 2rem;
         text-transform: uppercase;
 
-        a{
+        a {
             color: $main-white;
         }
     }
 }
 
-hr{
+hr {
     background: grey;
+}
+
+
+// ===========================
+// TABLET VIEW
+// ===========================
+@include respond(medium) {
+
+    nav {}
+
+}
+
+
+// ===========================
+// DESKTOP VIEW
+// ===========================
+@include respond(xx-large) {
+
+    nav {}
+
+
 }

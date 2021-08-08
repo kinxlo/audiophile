@@ -4,8 +4,6 @@ import Button from '../components/Button'
 import '../style/Banner.scss'
 
 const Banner = ({ products }) => {
-
-  
   const zx9_speaker = products.filter((product) => {
     return product.slug === 'zx9-speaker'
   })
@@ -15,14 +13,17 @@ const Banner = ({ products }) => {
   const yx1_earphone = products.filter((product) => {
     return product.slug === 'yx1-earphones'
   })
-
+  
   return (
     <section className='banner cc-container'>
       <section className='banner-a'>
+        {/* {getResponsiveImage()} */}
+        
         <img
           src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958929/audiophile/assets/home/desktop/image-speaker-zx9_wm9giq.png'
           alt='Speaker'
         />
+
         {zx9_speaker.map((product) => {
           return (
             <article key={product.id}>

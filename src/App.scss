@@ -1,17 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
+// "cc" stands for "custom class"
+
 @import './style/variables';
+@import './style/mixins';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Manrope',
-    sans-serif;
+        sans-serif;
 }
 
-.cc-container{
+.cc-container {
     width: 100%;
-    max-width: 1110px;
+    max-width: 328px;
     margin: 0 auto;
+}
+
+// ===========================
+// TABLET VIEW
+// ===========================
+@include respond(medium) {
+
+    .cc-container {
+        max-width: 1110px;
+    }
+
+}
+
+
+// ===========================
+// DESKTOP VIEW
+// ===========================
+@include respond(xx-large) {
+
+
+    .cc-container {
+        max-width: 1110px;
+    }
+
 }
