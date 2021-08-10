@@ -1,4 +1,5 @@
 @import '../style/variables';
+@import '../style/mixins';
 
 .modal {
     position: fixed;
@@ -12,11 +13,11 @@
 .checkout-modal {
     position: fixed;
     background: white;
-    width: 540px;
+    width: 327px;
     height: fit-content;
     top: 15%;
     left: 50%;
-    padding: 48px;
+    padding: 32px;
     border-radius: 8px;
     transform: translate(-50%, 0);
 
@@ -29,11 +30,11 @@
 
     .checkout-message {
         p:nth-child(1) {
-            font-size: 32px;
+            font-size: 24px;
             font-weight: 700;
             letter-spacing: 1px;
             text-transform: uppercase;
-            margin: 33px 0 24px;
+            margin: 23px 0 16px;
         }
 
         p:nth-child(2) {
@@ -46,9 +47,10 @@
         // border: 1px solid red;
         overflow: hidden;
         border-radius: 8px;
-        height: 140px;
+        height: 232px;
         display: flex;
-        margin: 33px 0 46px;
+        flex-direction: column;
+        margin: 24px 0 23px;
 
         .item-display {
             background: $main-white;
@@ -72,7 +74,7 @@
             flex: 1;
             background: $main-black;
             color: $main-white-l;
-            padding: 41px 31px;
+            padding: 15px 24px;
         }
     }
 
@@ -90,4 +92,47 @@
 
 .display-none {
     display: none;
+}
+
+
+// ===========================
+// TABLET VIEW
+// ===========================
+@include respond(medium) {}
+
+
+// ===========================
+// DESKTOP VIEW
+// ===========================
+@include respond(xx-large) {
+    
+
+    .checkout-modal {
+        
+        width: 540px;
+        padding: 48px;
+
+        .checkout-message {
+            p:nth-child(1) {
+                font-size: 32px;
+                margin: 33px 0 24px;
+            }
+        }
+
+        .checkout-display {
+
+            .item-display{
+                flex: 2;
+            }
+           
+            height: 140px;
+            flex-direction: row;
+            margin: 33px 0 46px;
+
+            .grand-total {
+                flex: 1;
+                padding: 41px 31px;
+            }
+        }
+    }
 }
