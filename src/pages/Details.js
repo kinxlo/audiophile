@@ -25,7 +25,7 @@ const Details = ({ products }) => {
 
       <section className='cc-container'>
         <div className='back'>go back</div>
-        <section className='item-box'>
+        <section className='item-box detail-box'>
           <div>
             <img
               src={productDetails[0].image.desktop}
@@ -73,7 +73,7 @@ const Details = ({ products }) => {
           <div className='item-1 item'>
             <img src={productDetails[0].gallery.first.desktop} alt='img-logo' />
           </div>
-          <div className='item-2 item'>
+          <div className='item-2 item item-2-desktop'>
             <img src={productDetails[0].gallery.third.desktop} alt='img-logo' />
           </div>
           <div className='item-3 item'>
@@ -81,6 +81,10 @@ const Details = ({ products }) => {
               src={productDetails[0].gallery.second.desktop}
               alt='img-logo'
             />
+          </div>
+          {/* duplicate code -- need better method */}
+          <div className='item-2 item item-2-mobile'>
+            <img src={productDetails[0].gallery.third.desktop} alt='img-logo' />
           </div>
         </div>
       </section>
@@ -127,7 +131,9 @@ export const Counter = ({ product }) => {
           +
         </span>
       </section>
-      <button onClick={(e) => addItem(item, e)}>add to cart</button>
+      <button className='counter-btn' onClick={(e) => addItem(item, e)}>
+        add to cart
+      </button>
     </form>
   )
 }

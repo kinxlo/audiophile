@@ -1,31 +1,141 @@
 @import '../style/variables';
+@import '../style/mixins';
 
 footer {
     background-color: $main-black;
     margin-top: 200px;
-    height: 23rem;
+    // height: 23rem;
 
-    section{
+    .footer-nav {
+        // border: 1px solid red;
+        text-align: center;
+
+        img {
+            margin: 0 0 3rem;
+        }
+
+        ul {
+            // border: 1px solid blue;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+
+            span {
+                padding: 0;
+
+                li {
+                    margin: 1rem 0;
+                    display: block;
+
+                    a {
+                        font-size: 13px;
+                        letter-spacing: 2px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    section {
         padding-top: 3rem !important;
     }
 
     .footer-text {
         color: grey;
 
-        p{
-            width: 34rem;
+        p {
+            text-align: center;
+            width: 327px;
             font-weight: 200;
             font-size: 15px;
             line-height: 25px;
         }
 
-        .footer-socials{
-            text-align: right;
+        .footer-socials {
+            text-align: center;
             margin-bottom: 1rem;
+            margin: 48px 0;
 
-            a{
+            a {
                 margin-left: 1rem;
                 color: $main-white;
+
+                .icon {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        h6 {
+            text-align: center;
+            padding: 0 0 3rem;
+        }
+    }
+}
+
+
+// ===========================
+// TABLET VIEW
+// ===========================
+@include respond(medium) {}
+
+
+// ===========================
+// DESKTOP VIEW
+// ===========================
+@include respond(xx-large) {
+    footer {
+        background-color: $main-black;
+        margin-top: 200px;
+        height: 23rem;
+
+        .footer-nav {
+            // border: 1px solid red;
+            text-align: left;
+
+            img {
+                margin: 0;
+            }
+
+
+            ul {
+                // border: 1px solid blue;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                span {
+                    padding: 0;
+
+                    li {
+                        display: inline;
+                        margin: 0 0 0 2rem;
+
+                        a {
+                            font-size: 13px;
+                            letter-spacing: 2px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .footer-text {
+            p {
+                width: 34rem;
+                text-align: left;
+            }
+
+            h6 {
+                text-align: left;
+                padding: 0;
+            }
+
+            .footer-socials {
+                text-align: right;
+                margin: 0;
             }
         }
     }

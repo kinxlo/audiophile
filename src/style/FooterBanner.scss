@@ -1,28 +1,33 @@
 @import '../style/variables';
+@import '../style/mixins';
 
 .footer-banner-section {
     // border: 1px solid red;
-    height: 38rem;
+    height: fit-content;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
 
 
     article {
-        width: 50%;
+        width: 100%;
 
         div {
-            width: 29rem;
+            width: 100%;
+            text-align: center;
         }
 
         h1 {
             font-weight: bold;
-            font-size: 40px;
+            font-size: 28px;
             letter-spacing: 1.42857px;
             text-transform: uppercase;
+            margin: 40px 0 32px;
 
             span {
                 color: $accent-color;
+                padding: 0;
             }
         }
 
@@ -30,17 +35,72 @@
             font-weight: 200;
             font-size: 15px;
             line-height: 25px;
-            padding-right: 3rem;
+            padding: 0 1rem;
         }
     }
 
     .person-on-headphones {
-        width: 50%;
-        height: 100%;
-        background-image: url('https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-best-gear_a5jy1y.jpg');
+        width: 100%;
+        height: 19rem;
+        background-image: url('https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/mobile/image-best-gear_gsj3yo.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         border-radius: 8px;
+    }
+}
+
+
+// ===========================
+// TABLET VIEW
+// ===========================
+@include respond(medium) {}
+
+
+// ===========================
+// DESKTOP VIEW
+// ===========================
+@include respond(xx-large) {
+
+    .footer-banner-section {
+        // border: 1px solid red;
+        height: 38rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+
+        article {
+            width: 50%;
+
+            div {
+                width: 29rem;
+                text-align: left;
+            }
+
+            h1 {
+
+                font-size: 40px;
+
+
+                span {
+                    color: $accent-color;
+                }
+            }
+
+            p {
+                font-weight: 200;
+                font-size: 15px;
+                line-height: 25px;
+                padding: 0 3rem 0 0;
+            }
+        }
+
+        .person-on-headphones {
+            width: 50%;
+            height: 100%;
+            background-image: url('https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958944/audiophile/assets/shared/desktop/image-best-gear_a5jy1y.jpg');
+        }
     }
 }

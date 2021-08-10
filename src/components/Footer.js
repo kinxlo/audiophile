@@ -7,26 +7,28 @@ function Footer() {
   return (
     <footer>
       <section className='cc-container'>
-        <nav>
-          <Link to='/'>
-            <img
-              src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/desktop/logo_usidfy.svg'
-              alt='LOGO'
-            />
-          </Link>
+        <nav className='footer-nav'>
           <ul>
-            <li>
-              <Link to='/'>Home</Link>
-            </li>
-            <li>
-              <Link to='/'>Headphones</Link>
-            </li>
-            <li>
-              <Link to='/'>Speakers</Link>
-            </li>
-            <li>
-              <Link to='/'>Earphones</Link>
-            </li>
+            <Link to='/'>
+              <img
+                src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/desktop/logo_usidfy.svg'
+                alt='LOGO'
+              />
+            </Link>
+            <span>
+              <li>
+                <Link to='/'>Home</Link>
+              </li>
+              <li>
+                <Link to='/'>Headphones</Link>
+              </li>
+              <li>
+                <Link to='/'>Speakers</Link>
+              </li>
+              <li>
+                <Link to='/'>Earphones</Link>
+              </li>
+            </span>
           </ul>
         </nav>
         <div className='footer-text'>
@@ -38,16 +40,16 @@ function Footer() {
           </p>
           <div className='footer-socials'>
             <Link to='/'>
-              <GrFacebook />
+              <GrFacebook className = "icon"/>
             </Link>
             <Link to='/'>
-              <GrTwitter />
+              <GrTwitter className = "icon"/>
             </Link>
             <Link to='/'>
-              <GrInstagram />
+              <GrInstagram className = "icon"/>
             </Link>
           </div>
-          <small>Copyright 2021. All Rights Reserved</small>
+          <h6>Copyright 2021. All Rights Reserved</h6>
         </div>
       </section>
     </footer>
