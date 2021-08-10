@@ -1,4 +1,5 @@
 @import '../style/variables';
+@import '../style/mixins';
 
 // !not my original code
 // !credit to google and copy and paste
@@ -15,16 +16,16 @@
 .modal-main {
     position: fixed;
     background: white;
-    width: 377px;
+    width: 88%;
     height: 488px;
-    top: 129px;
-    left: 898px;
+    top: 114px;
+    left: 6%;
     padding: 33px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // transform: translate(-50%, -50%);
+    // transform: translate(0%, 5%);
 
     .cart-title {
         display: flex;
@@ -43,7 +44,7 @@
     }
 
     .cart-overflow {
-        border: 1px solid red !important;
+        // border: 1px solid red !important;
         height: 18rem !important;
         overflow-y: scroll !important;
     }
@@ -114,6 +115,7 @@
         // border: 1px solid red;
         display: flex;
         align-items: center;
+        margin-bottom: 0;
 
 
         .counter {
@@ -168,6 +170,29 @@
                 color: grey;
             }
         }
+    }
+
+}
+
+
+// ===========================
+// TABLET VIEW
+// ===========================
+@include respond(medium) {}
+
+
+// ===========================
+// DESKTOP VIEW
+// ===========================
+@include respond(xx-large) {
+
+    .modal-main {
+
+        width: 377px;
+        height: 488px;
+        top: 129px;
+        left: 898px;
+
     }
 
 }

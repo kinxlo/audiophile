@@ -1,10 +1,11 @@
 @import '../style/variables';
+@import '../style/mixins';
 
 .form-background {
     background: $main-white;
     height: 100%;
     margin-bottom: -200px;
-    padding-bottom: 200px;
+    padding-bottom: 97px;
 
     h1 {
         padding-top: 79px;
@@ -14,33 +15,32 @@
 
     .form-summary {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
-
     }
 
     .form-container {
-        grid-column: span 2 / auto;
-        // border: 1px solid red;
-        width: 45.625rem;
-        height: 70.375rem;
+
+        width: 100%;
+        height: fit-content;
         border-radius: 8px;
         background: $main-white-a;
-        padding: 48px;
+        padding: 23px;
 
         h1 {
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1.14286px;
             margin-bottom: 41px;
+            padding-top: 0;
         }
 
     }
 
     .summary-container {
-        width: 21.9rem;
-        height: 38.25rem;
+        width: 100%;
+        height: fit-content;
         border-radius: 8px;
         background: $main-white-a;
         padding: 32px;
@@ -56,16 +56,15 @@
             font-size: 18px;
             font-weight: 700;
             text-transform: uppercase;
+            margin-bottom: 31px;
         }
 
         .cart-overflow {
-            // border: 1px solid red !important;
             height: 18rem !important;
             overflow-y: scroll !important;
         }
 
         .item {
-            // border: 1px solid red !important;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -164,16 +163,14 @@ form {
 
     // billing form
     .billing-details {
+
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 16px;
-        // border: 1px solid blue;
+
 
         div {
-            // border: 1px solid red;
-            width: 19.3rem;
-            // height: 5rem;
-            // margin: 0 auto;
+            width: 100%;
 
             input {
                 width: 100%;
@@ -187,13 +184,12 @@ form {
 
     // shipping form
     .shipping-details {
+
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 16px;
 
-        // border: 1px solid blue;
         .address {
-            grid-column: span 2 / auto;
             width: 100%;
 
             input {
@@ -203,10 +199,7 @@ form {
     }
 
     div {
-        // border: 1px solid red;
-        width: 19.3rem;
-        // height: 5rem;
-        // margin: 0 auto;
+        width: 100%;
 
         input {
             width: 100%;
@@ -219,8 +212,9 @@ form {
 
     // payment form
     .payment-details {
+
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
 
         input[type='radio'] {
@@ -267,6 +261,91 @@ form {
         .span-row-2 {
             grid-row: span 2 / auto;
         }
+    }
+
+}
+
+
+// ===========================
+// TABLET VIEW
+// ===========================
+@include respond(medium) {}
+
+
+// ===========================
+// DESKTOP VIEW
+// ===========================
+@include respond(xx-large) {
+
+    .form-background {
+
+        padding-bottom: 200px;
+
+        .form-summary {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .form-container {
+            grid-column: span 2 / auto;
+            // border: 1px solid red;
+            width: 45.625rem;
+            height: 70.375rem;
+            padding: 48px;
+
+            h1 {
+                font-size: 32px;
+            }
+
+        }
+
+        .summary-container {
+            width: 21.9rem;
+        }
+
+
+    }
+
+    form {
+
+        margin-bottom: 53px;
+
+        // billing form
+        .billing-details {
+            grid-template-columns: repeat(2, 1fr);
+
+            div {
+                
+                width: 19.3rem;
+            }
+        }
+
+        // shipping form
+        .shipping-details {
+            
+            grid-template-columns: repeat(2, 1fr);
+
+            // border: 1px solid blue;
+            .address {
+                grid-column: span 2 / auto;
+                width: 100%;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+
+        div {
+            // border: 1px solid red;
+            width: 19.3rem;
+        }
+
+        // payment form
+        .payment-details {
+           
+            grid-template-columns: repeat(2, 1fr);
+        }
+
     }
 
 }

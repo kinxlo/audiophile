@@ -2,6 +2,7 @@
   {
     "id": 1,
     "slug": "yx1-earphones",
+    "abbr": "yx1",
     "name": "YX1 Wireless Earphones",
     "image": {
       "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958938/audiophile/assets/product-yx1-earphones/mobile/image-product_xpwhyf.jpg",
@@ -85,6 +86,7 @@
   {
     "id": 2,
     "slug": "xx59-headphones",
+    "abbr": "xx59",
     "name": "XX59 Headphones",
     "image": {
       "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958931/audiophile/assets/product-xx59-headphones/mobile/image-product_f4qnqf.jpg",
@@ -164,6 +166,7 @@
   {
     "id": 3,
     "slug": "xx99-mark-one-headphones",
+    "abbr": "xx99 mkI",
     "name": "XX99 Mark I Headphones",
     "image": {
       "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958934/audiophile/assets/product-xx99-mark-one-headphones/mobile/image-product_xd6k55.jpg",
@@ -243,6 +246,7 @@
   {
     "id": 4,
     "slug": "xx99-mark-two-headphones",
+    "abbr": "xx99 mkII",
     "name": "XX99 Mark II Headphones",
     "image": {
       "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958936/audiophile/assets/product-xx99-mark-two-headphones/mobile/image-product_ml2dg4.jpg",
@@ -326,6 +330,7 @@
   {
     "id": 5,
     "slug": "zx7-speaker",
+    "abbr": "zx7",
     "name": "ZX7 Speaker",
     "image": {
       "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958939/audiophile/assets/product-zx7-speaker/mobile/image-product_rlluuf.jpg",
@@ -409,6 +414,7 @@
   {
     "id": 6,
     "slug": "zx9-speaker",
+    "abbr": "zx9",
     "name": "ZX9 Speaker",
     "image": {
       "mobile": "https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958941/audiophile/assets/product-zx9-speaker/mobile/image-product_uodae4.jpg",

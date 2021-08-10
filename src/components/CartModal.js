@@ -43,7 +43,7 @@ export default CartModal
 
 // *CART DETAILS
 
-const CartItems = ({ id, image, price, name, quantity }) => {
+const CartItems = ({ id, image, price, abbr, name, quantity }) => {
   const { increase, decrease } = useContext(CartContext)
 
   return (
@@ -51,7 +51,7 @@ const CartItems = ({ id, image, price, name, quantity }) => {
       <div className='img-price'>
         <img src={image} alt={name} />
         <div>
-          <p className='product-name'>{name}</p>
+          <p className='product-name'>{name.slice(0, 4).trim('').toUpperCase()}</p>
           <p className='price'>{price}</p>
         </div>
       </div>
