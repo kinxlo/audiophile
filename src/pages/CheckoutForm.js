@@ -9,11 +9,11 @@ const CheckoutForm = () => {
       <DetailNavbar />
       <section className='form-background'>
         <h1 className='cc-container'>go back</h1>
-        <div className='form-summary cc-container'>
+        <form className='form-summary cc-container'>
           <div className='form-container'>
             <h1>CHECKOUT</h1>
             {/* billing form */}
-            <form>
+            <aside>
               <h5 className='form-title'>Billing details</h5>
               <section className='billing-details'>
                 <div>
@@ -32,10 +32,10 @@ const CheckoutForm = () => {
                   <input type='number' placeholder='+1 202-555-0136' />
                 </div>
               </section>
-            </form>
+            </aside>
 
             {/* shipping info */}
-            <form action=''>
+            <aside>
               <h5 className='form-title'>Shipping Info</h5>
               <section className='shipping-details'>
                 <div className='address'>
@@ -58,10 +58,10 @@ const CheckoutForm = () => {
                   <input type='text' placeholder='United State' />
                 </div>
               </section>
-            </form>
+            </aside>
 
             {/* payment details */}
-            <form action=''>
+            <aside>
               <h5 className='form-title'>payment details</h5>
               <section className='payment-details'>
                 <div className='payment-title'>payment method</div>
@@ -95,10 +95,21 @@ const CheckoutForm = () => {
                   <input type='password' placeholder='6891' />
                 </div>
               </section>
-            </form>
+              <section className='wallet-info'>
+                <div>
+                  <img src='' alt='wallet' />
+                </div>
+                <p>
+                  The ‘Cash on Delivery’ option enables you to pay in cash when
+                  our delivery courier arrives at your residence. Just make sure
+                  your address is correct so that your order will not be
+                  cancelled.
+                </p>
+              </section>
+            </aside>
           </div>
           <SummarySection />
-        </div>
+        </form>
       </section>
     </div>
   )
