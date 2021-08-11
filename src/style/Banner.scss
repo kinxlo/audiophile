@@ -58,6 +58,10 @@
                 border: none;
                 background: $main-black;
                 color: $main-white;
+
+                &:hover {
+                    background: hsl(0, 0%, 30%);
+                }
             }
         }
     }
@@ -96,6 +100,11 @@
                 background: transparent;
                 border: 1px solid $main-black;
                 color: $main-black;
+
+                &:hover {
+                    background: $main-black-a;
+                    color: $main-white;
+                }
             }
         }
     }
@@ -147,6 +156,11 @@
                 background: transparent;
                 border: 1px solid $main-black;
                 color: $main-black;
+
+                &:hover {
+                    background: $main-black-a;
+                    color: $main-white;
+                }
             }
         }
 

@@ -54,6 +54,10 @@
             color: $main-white;
             height: 48px;
             width: 160px;
+
+            &:hover {
+                background: $accent-color-a;
+            }
         }
     }
 }

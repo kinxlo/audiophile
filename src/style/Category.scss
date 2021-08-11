@@ -36,8 +36,22 @@
             text-align: center;
 
             .category-text {
-
                 margin-top: 3rem;
+                color: $main-black;
+
+                p {
+                    font-size: 13px;
+                    margin-bottom: 0;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: $accent-color;
+                    }
+
+                    .icon {
+                        fill: $accent-color !important;
+                    }
+                }
             }
 
             h1 {
@@ -47,15 +61,7 @@
                 margin-bottom: 1rem;
             }
 
-            a {
-                color: #000;
-                font-size: 13px;
-                text-transform: uppercase;
 
-                .icon {
-                    fill: $accent-color;
-                }
-            }
         }
 
     }

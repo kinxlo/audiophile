@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import { GrFacebook, GrTwitter, GrInstagram } from 'react-icons/gr'
 import '../style/Footer.scss'
 
@@ -9,24 +9,24 @@ function Footer() {
       <section className='cc-container'>
         <nav className='footer-nav'>
           <ul>
-            <Link to='/'>
+            <NavLink to='/'>
               <img
                 src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958945/audiophile/assets/shared/desktop/logo_usidfy.svg'
                 alt='LOGO'
               />
-            </Link>
+            </NavLink>
             <span>
               <li>
-                <Link to='/'>Home</Link>
+                <NavLink to='/'>Home</NavLink>
               </li>
               <li>
-                <Link to='/'>Headphones</Link>
+                <NavLink to='/headphones'>Headphones</NavLink>
               </li>
               <li>
-                <Link to='/'>Speakers</Link>
+                <NavLink to='/speakers'>Speakers</NavLink>
               </li>
               <li>
-                <Link to='/'>Earphones</Link>
+                <NavLink to='/earphones'>Earphones</NavLink>
               </li>
             </span>
           </ul>
@@ -40,13 +40,13 @@ function Footer() {
           </p>
           <div className='footer-socials'>
             <Link to='/'>
-              <GrFacebook className = "icon"/>
+              <GrFacebook className='icon' />
             </Link>
             <Link to='/'>
-              <GrTwitter className = "icon"/>
+              <GrTwitter className='icon' />
             </Link>
             <Link to='/'>
-              <GrInstagram className = "icon"/>
+              <GrInstagram className='icon' />
             </Link>
           </div>
           <h6>Copyright 2021. All Rights Reserved</h6>

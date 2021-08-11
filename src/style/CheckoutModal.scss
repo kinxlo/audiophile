@@ -44,15 +44,15 @@
     }
 
     .checkout-display {
-        // border: 1px solid red;
         overflow: hidden;
         border-radius: 8px;
-        height: 232px;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         margin: 24px 0 23px;
 
         .item-display {
+            border: 1px solid red;
             background: $main-white;
             flex: 1;
             padding: 24px;
@@ -105,10 +105,10 @@
 // DESKTOP VIEW
 // ===========================
 @include respond(xx-large) {
-    
+
 
     .checkout-modal {
-        
+
         width: 540px;
         padding: 48px;
 
@@ -120,14 +120,14 @@
         }
 
         .checkout-display {
-
-            .item-display{
-                flex: 2;
-            }
-           
-            height: 140px;
+            // height: 140px;
             flex-direction: row;
             margin: 33px 0 46px;
+
+            .item-display {
+                flex: 2;
+            }
+
 
             .grand-total {
                 flex: 1;

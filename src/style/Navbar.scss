@@ -17,8 +17,20 @@ nav {
 
         a {
             color: $main-white;
+            
+            // transition: all ease-in-out 0.2s;
+
+            &:hover{
+                color: $accent-color;
+                // transition: all ease-in-out 0.2s;
+            }
+
+            &:active{
+                color: $accent-color;
+            }
         }
     }
+
 }
 
 hr {

@@ -62,6 +62,15 @@
         .cart-overflow {
             height: 18rem !important;
             overflow-y: scroll !important;
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            &::-webkit-scrollbar {
+                display: none;
+            }
         }
 
         .item {
@@ -314,14 +323,14 @@ form {
             grid-template-columns: repeat(2, 1fr);
 
             div {
-                
+
                 width: 19.3rem;
             }
         }
 
         // shipping form
         .shipping-details {
-            
+
             grid-template-columns: repeat(2, 1fr);
 
             // border: 1px solid blue;
@@ -342,7 +351,7 @@ form {
 
         // payment form
         .payment-details {
-           
+
             grid-template-columns: repeat(2, 1fr);
         }
 

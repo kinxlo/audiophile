@@ -3,17 +3,6 @@
 
 //=====details itembox code============
 
-// must turn to mixins
-button {
-    text-transform: uppercase;
-    font-size: 13px;
-    padding: .5rem;
-    border: none;
-    background: $accent-color;
-    color: $main-white;
-    height: 48px;
-    width: 160px;
-}
 
 .back {
     margin-top: 5rem;
@@ -56,7 +45,6 @@ h4 {
     display: flex;
     align-items: center;
 
-
     .counter {
         // border: 1px solid blue;
         display: flex;
@@ -65,6 +53,13 @@ h4 {
         height: 48px;
         background: $main-white-l;
         // padding: 1rem 0;
+
+        .minus-btn,
+        .plus-btn {
+            &:hover {
+                color: $accent-color;
+            }
+        }
 
         .num-value {
             font-weight: 700;
