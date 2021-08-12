@@ -29,3 +29,23 @@ const getResponsiveImage = () => {
     )
   }
 }
+
+
+
+
+let check_index = state.cart.findIndex(
+        (item) => item.id === action.payload.id
+      )
+      check_index++
+      console.log(check_index)
+
+      if (check_index !== 0) {
+        ++state.cart[check_index].quantity
+        console.log('Quantity updated:', state.cart)
+        return { ...state, cart: [state.cart[check_index]] }
+      } else {
+        state.cart.find((p) => p.id === action.payload.id)
+        console.log('The product has been added to cart:', action.payload)
+        return { ...state, cart: [...state.cart, action.payload] }
+      }
+    // break

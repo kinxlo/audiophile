@@ -1,19 +1,21 @@
 export const CartReducer = (state, action) => {
   switch (action.type) {
     case 'ADD_TO_CART':
-      if (state.cart.length === 0) {
+      const { id } = action.payload
+
+      const inCart = state.cart.some((item) => {
+        return item.id === id
+      })
+
+      if (inCart) {
         return {
           ...state,
-          cart: [action.payload],
+          cart: state.cart.map((item) =>
+            item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+          ),
         }
-      }else{
-        let modifiedCart = state.cart.map((cartItem) => {
-          if(cartItem.id === action.payload.id){
-            return {...cartItem, quantity: action.payload.quantity}
-          }
-          return cartItem
-        })
-        return {...state, cart: modifiedCart}
+      } else {
+        return { ...state, cart: [...state.cart, action.payload] }
       }
 
     case 'INCREASE':
