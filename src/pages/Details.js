@@ -22,73 +22,72 @@ const Details = ({ products }) => {
     <div>
       <DetailNavbar />
       {/* the modal of the cart  */}
-
-      <section className='cc-container'>
-        <div className='back'>go back</div>
-        <section className='item-box detail-box'>
-          <div>
-            <img
-              src={productDetails[0].image.desktop}
-              alt={productDetails[0].name}
-            />
+      {productDetails.map((product) => {
+        return (
+          <div key={product.id}>
+            <section className='cc-container'>
+              <div className='back'>go back</div>
+              <section className='item-box detail-box'>
+                <div>
+                  <img src={product.image.desktop} alt={product.name} />
+                </div>
+                <article className='item-description'>
+                  <div>
+                    <h3>New Product</h3>
+                    <h1>{product.name}</h1>
+                    <p className='cc-hero-desc'>{product.description}</p>
+                    <h4>${product.price}</h4>
+                    {/* counter */}
+                    <Counter product={product} />
+                    {/* counter */}
+                  </div>
+                </article>
+              </section>
+            </section>
+            <section className='features-and-box cc-container'>
+              <article className='features'>
+                <h2>features</h2>
+                <div className='p-group'>
+                  <p>{product.features}</p>
+                </div>
+              </article>
+              <article className='in-box'>
+                {/* conditional rendering and mapping is needed here */}
+                <h2>In the box</h2>
+                <div className='p-group'>
+                  {/* map throught the product quantity and output a list of jsx */}
+                  {product.includes.map((product, index) => {
+                    return (
+                      <p key={index}>
+                        <span className='list-bullet'>{product.quantity}x</span>
+                        {product.item}
+                      </p>
+                    )
+                  })}
+                </div>
+              </article>
+            </section>
+            <section className='cc-container'>
+              <div className='img-grid'>
+                <div className='item-1 item'>
+                  <img src={product.gallery.first.desktop} alt='img-logo' />
+                </div>
+                <div className='item-2 item item-2-desktop'>
+                  <img src={product.gallery.third.desktop} alt='img-logo' />
+                </div>
+                <div className='item-3 item'>
+                  <img src={product.gallery.second.desktop} alt='img-logo' />
+                </div>
+                {/* duplicate code -- need better method */}
+                <div className='item-2 item item-2-mobile'>
+                  <img src={product.gallery.third.desktop} alt='img-logo' />
+                </div>
+              </div>
+            </section>
+            <Sugestion state={product} />
           </div>
-          <article className='item-description'>
-            <div>
-              <h3>New Product</h3>
-              <h1>{productDetails[0].name}</h1>
-              <p className='cc-hero-desc'>{productDetails[0].description}</p>
-              <h4>${productDetails[0].price}</h4>
-              {/* counter */}
-              <Counter product={productDetails[0]} />
-              {/* counter */}
-            </div>
-          </article>
-        </section>
-      </section>
-      <section className='features-and-box cc-container'>
-        <article className='features'>
-          <h2>features</h2>
-          <div className='p-group'>
-            <p>{productDetails[0].features}</p>
-          </div>
-        </article>
-        <article className='in-box'>
-          {/* conditional rendering and mapping is needed here */}
-          <h2>In the box</h2>
-          <div className='p-group'>
-            {/* map throught the product quantity and output a list of jsx */}
-            {productDetails[0].includes.map((product, index) => {
-              return (
-                <p key={index}>
-                  <span className='list-bullet'>{product.quantity}x</span>
-                  {product.item}
-                </p>
-              )
-            })}
-          </div>
-        </article>
-      </section>
-      <section className='cc-container'>
-        <div className='img-grid'>
-          <div className='item-1 item'>
-            <img src={productDetails[0].gallery.first.desktop} alt='img-logo' />
-          </div>
-          <div className='item-2 item item-2-desktop'>
-            <img src={productDetails[0].gallery.third.desktop} alt='img-logo' />
-          </div>
-          <div className='item-3 item'>
-            <img
-              src={productDetails[0].gallery.second.desktop}
-              alt='img-logo'
-            />
-          </div>
-          {/* duplicate code -- need better method */}
-          <div className='item-2 item item-2-mobile'>
-            <img src={productDetails[0].gallery.third.desktop} alt='img-logo' />
-          </div>
-        </div>
-      </section>
-      <Sugestion state={productDetails[0]} />
+        )
+      })}
       <Category />
       <FooterBanner />
     </div>

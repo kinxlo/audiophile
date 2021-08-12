@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 import Button from '../components/Button'
 import '../style/Banner.scss'
 
-const Banner = ({ products }) => {
-  const zx9_speaker = products.filter((product) => {
+const Banner = ({ speakers, earphones }) => {
+  const zx9_speaker = speakers.filter((product) => {
     return product.slug === 'zx9-speaker'
   })
-  const zx7_speaker = products.filter((product) => {
+  const zx7_speaker = speakers.filter((product) => {
     return product.slug === 'zx7-speaker'
   })
-  const yx1_earphone = products.filter((product) => {
+  const yx1_earphone = earphones.filter((product) => {
     return product.slug === 'yx1-earphones'
   })
   

@@ -33,7 +33,13 @@ function App() {
   return (
     <div className='App'>
       <Switch>
-        <Route path='/' component={Home} exact />
+        <Route path='/' exact>
+          <Home
+            earphones={earphones}
+            speakers={speakers}
+            headphones={headphones}
+          />
+        </Route>
         <Route path='/headphones'>
           <Headphones headphones={headphones} />
         </Route>
