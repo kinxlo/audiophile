@@ -5,31 +5,79 @@
 nav {
 
     padding: 2rem 0 !important;
+    // background-color: red;
 
-    button{
-        width: fit-content;
-    }
+    .cart {
+        position: relative;
+        // border: 1px solid red;
 
-    li {
-        display: inline;
-        margin: 0 2rem;
-        text-transform: uppercase;
-
-        a {
+        .circle {
+            position: absolute;
+            border-radius: 100%;
+            top: -6px;
+            left: 13px;
+            width: 24px;
+            height: 24px;
+            // padding: 3.5px 0px 0px 10px;
+            background: $accent-color;
+            font-size: 12px;
             color: $main-white;
-            
-            // transition: all ease-in-out 0.2s;
 
-            &:hover{
-                color: $accent-color;
-                // transition: all ease-in-out 0.2s;
-            }
-
-            &:active{
-                color: $accent-color;
+            div {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                // border: 1px solid blue;
+                width: fit-content;
+                height: fit-content;
+                transform: translate(-50%, -50%)
             }
         }
     }
+
+    .desktop-cart {
+        display: none;
+    }
+
+    button {
+        // border: 1px solid red !important;
+        width: fit-content;
+
+        &:hover {
+            background: transparent;
+        }
+    }
+
+    ul {
+        // border: 1px solid red !important;
+        text-transform: uppercase;
+        align-items: center;
+
+        li {
+            margin: 1rem 0;
+
+            a {
+                color: $main-white;
+
+                &:hover {
+                    color: $accent-color;
+
+                }
+
+                &:active {
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+
+    // li {
+    //     display: inline;
+    //     margin: 0 2rem;
+    //     
+
+    //     
+    // }
 
 }
 
@@ -53,7 +101,23 @@ hr {
 // ===========================
 @include respond(xx-large) {
 
-    nav {}
+    nav {
+        .mobile-cart {
+            display: none;
+        }
+
+        .desktop-cart {
+            display: block;
+        }
+
+        ul {
+            display: inline;
+
+            li {
+                margin: 0 2rem;
+            }
+        }
+    }
 
 
 }

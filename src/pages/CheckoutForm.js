@@ -120,6 +120,9 @@ export default CheckoutForm
 
 const SummarySection = () => {
   const { cart, total } = useContext(CartContext)
+  const [shipping] = useState(50)
+  const [VAT] = useState(1079)
+
   // console.log(cart)
 
   // *set modal State in details page to false
@@ -149,15 +152,15 @@ const SummarySection = () => {
         </div>
         <div>
           <p>shipping</p>
-          <p>$50</p>
+          <p>${shipping}</p>
         </div>
         <div>
           <p>vat(included)</p>
-          <p>$1,079</p>
+          <p>${VAT}</p>
         </div>
         <div>
           <p>Grand Total</p>
-          <p>$5,446</p>
+          <p>${total + shipping + VAT}</p>
         </div>
       </section>
       <button onClick={showModal}>continue & pay</button>
