@@ -2,7 +2,7 @@ import { FaCheckCircle } from 'react-icons/fa'
 import { SummaryItem } from '../pages/CheckoutForm'
 import '../style/CheckoutModal.scss'
 
-const CheckoutModal = ({ handleClose, show }) => {
+const CheckoutModal = ({ handleClose, show, cart }) => {
   const showHideClassName = show ? 'modal display-block' : 'modal display-none'
 
   return (
@@ -17,7 +17,9 @@ const CheckoutModal = ({ handleClose, show }) => {
         </div>
         <div className='checkout-display'>
           <div className='item-display'>
-            <SummaryItem />
+            {cart.map((cartItem) => {
+              return <SummaryItem key={cartItem.id} {...cartItem} />
+            })}
             <hr />
             <p>and 2 other item(s)</p>
           </div>

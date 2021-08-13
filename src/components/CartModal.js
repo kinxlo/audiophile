@@ -7,10 +7,9 @@ const CartModal = ({ handleClose, show }) => {
   const showHideClassName = show ? 'modal display-block' : 'modal display-none'
 
   const { cart, totalQuantity, total, removeAll } = useContext(CartContext)
-  // console.log(cart)
 
   return (
-    <div className={showHideClassName}>
+    <div onClick={handleClose} className={showHideClassName}>
       <section className='modal-main'>
         <article>
           <div className='cart-title'>
@@ -29,7 +28,7 @@ const CartModal = ({ handleClose, show }) => {
             <p>${total}</p>
           </div>
           <Link to='/checkout'>
-            <button onClick={handleClose} className='check' type='button'>
+            <button className='check' type='button'>
               Check out
             </button>
           </Link>

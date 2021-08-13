@@ -4,14 +4,11 @@ import DetailNavbar from '../components/DetailNavbar'
 import FooterBanner from '../components/FooterBanner'
 import Category from '../components/Category'
 import '../style/DetailPage.scss'
-// import Button from '../components/Button'
 import Sugestion from '../components/Sugestion'
 import { CartContext } from '../contexts/CartContext'
-// import CartModal from '../components/CartModal'
 
 const Details = ({ products }) => {
   //  * using the useLocation hook, we get the details of the current data
-  // const { products } = useContext(ProductsContext)
   const { state } = useLocation()
 
   let productDetails = products.filter((product) => {
@@ -116,7 +113,11 @@ export const Counter = ({ product }) => {
     setQuantity(quantity + 1)
   }
   const decrement = () => {
-    setQuantity(quantity - 1)
+    if (quantity <= 1) {
+      setQuantity(1)
+    } else {
+      setQuantity(quantity - 1)
+    }
   }
 
   return (

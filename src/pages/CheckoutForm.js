@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import CheckoutModal from '../components/CheckoutModal'
 import DetailNavbar from '../components/DetailNavbar'
+import { CartContext } from '../contexts/CartContext'
 import '../style/CheckoutForm.scss'
 
 const CheckoutForm = () => {
@@ -118,6 +119,9 @@ const CheckoutForm = () => {
 export default CheckoutForm
 
 const SummarySection = () => {
+  const { cart, total } = useContext(CartContext)
+  // console.log(cart)
+
   // *set modal State in details page to false
   const [show, isShown] = useState(false)
   // handle button event to show the modal
@@ -134,12 +138,14 @@ const SummarySection = () => {
     <div className='summary-container'>
       <h3>summary</h3>
       <section className='cart-overflow'>
-        <SummaryItem />
+        {cart.map((cartItem) => {
+          return <SummaryItem key={cartItem.id} {...cartItem} />
+        })}
       </section>
       <section className='summary-detail'>
         <div>
           <p>Total</p>
-          <p>$5,396</p>
+          <p>${total}</p>
         </div>
         <div>
           <p>shipping</p>
@@ -155,25 +161,27 @@ const SummarySection = () => {
         </div>
       </section>
       <button onClick={showModal}>continue & pay</button>
-      <CheckoutModal handleClose={hideModal} show={show} />
+      <CheckoutModal handleClose={hideModal} show={show} cart={cart} />
     </div>
   )
 }
 
-export const SummaryItem = () => {
+export const SummaryItem = ({ id, name, price, image, quantity }) => {
+  // console.log(id)
   return (
-    <div className='item'>
-      <div className='img-price'>
-        <img
-          src='https://res.cloudinary.com/kingsleysolomon/image/upload/v1624958922/audiophile/assets/cart/image-xx59-headphones_ityj1l.jpg'
-          alt=''
-        />
-        <div>
-          <p className='product-name'>name</p>
-          <p className='price'>price</p>
+    <>
+      <div key={id} className='item'>
+        <div className='img-price'>
+          <img src={image} alt={name} />
+          <div>
+            <p className='product-name'>
+              {name.slice(0, 4).trim('').toUpperCase()}
+            </p>
+            <p className='price'>{price}</p>
+          </div>
         </div>
+        <h6>x{quantity}</h6>
       </div>
-      <h6>x1</h6>
-    </div>
+    </>
   )
 }

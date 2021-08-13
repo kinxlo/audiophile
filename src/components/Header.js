@@ -19,13 +19,13 @@ function Header({ headphones }) {
               <h3>New product</h3>
               <h1>XX99 Mark II Headphones</h1>
               <p className='cc-hero-desc'>
-                Experience natural, lifelike audio and exceptional build quality
+                Experience natural, life like audio and exceptional build quality
                 made for the passionate music enthusiast.
               </p>
               {/* <button>See product</button> */}
               <Link
                 to={{
-                  pathname: `/details/${headphones.slug}`,
+                  pathname: `/details/${headphone.slug}`,
                   state: headphone.slug,
                 }}
               >
