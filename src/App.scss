@@ -25,7 +25,6 @@
 // TABLET VIEW
 // ===========================
 @include respond(medium) {
-
     .cc-container {
         max-width: 1110px;
     }
@@ -37,8 +36,6 @@
 // DESKTOP VIEW
 // ===========================
 @include respond(xx-large) {
-
-
     .cc-container {
         max-width: 1110px;
     }
