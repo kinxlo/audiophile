@@ -5,7 +5,7 @@
 nav {
 
     padding: 2rem 0 !important;
-    // background-color: red;
+    // color: red !important;
 
     .cart {
         position: relative;
@@ -57,7 +57,8 @@ nav {
             margin: 1rem 0;
 
             a {
-                color: $main-white;
+                // color: $main-white;
+                color: red;
 
                 &:hover {
                     color: $accent-color;
@@ -74,9 +75,9 @@ nav {
     // li {
     //     display: inline;
     //     margin: 0 2rem;
-    //     
+    //
 
-    //     
+    //
     // }
 
 }
