@@ -5,48 +5,38 @@
 // No media query for `xs` since this is the default in Bootstrap
 
 @mixin respond($breakpoint) {
-
     // Small devices (landscape phones, 576px and up)
-    @if($breakpoint==small) {
-
+    @if ($breakpoint==small) {
         @media (min-width: 576px) {
-            @content
+            @content;
         }
     }
-
-    ;
 
     // Medium devices (tablets, 768px and up)
-    @if($breakpoint==medium) {
+    @if ($breakpoint==medium) {
         @media (min-width: 768px) {
-            @content
+            @content;
         }
     }
-
-    ;
 
     // Large devices (desktops, 992px and up)
-    @if($breakpoint==large) {
+    @if ($breakpoint==large) {
         @media (min-width: 992px) {
-            @content
+            @content;
         }
     }
-
-    ;
 
     // X-Large devices (large desktops, 1200px and up)
-    @if($breakpoint==x-large) {
+    @if ($breakpoint==x-large) {
         @media (min-width: 1200px) {
-            @content
+            @content;
         }
     }
 
-    ;
-
     // XX-Large devices (larger desktops, 1400px and up)
-    @if($breakpoint==xx-large) {
+    @if ($breakpoint==xx-large) {
         @media (min-width: 1400px) {
-            @content
+            @content;
         }
     }
 }
